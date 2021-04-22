@@ -1,5 +1,83 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	scroll-behavior: smooth;
+}
 .prueba {
 	display: block;
 	margin: auto;
 	margin-top: 45vh !important; 
+}
+.contenedor {
+	height: 93vh;
+	overflow: hidden;
+	position: relative;
+}
+.contenedor::after {
+	content: "";
+	background: rgb(17, 52, 72,.7);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+}
+.imgPrincipal{
+	width: 100vw;
+}
+.content-title{
+	position: absolute;
+	top:0;
+	margin: 35vh auto;
+	width: 100%;
+	z-index: 1;
+}
+.title{
+	text-align: center;
+	color: #fff;
+	font-family: Comic Sans Ms;
+}
+.titulo{
+	font-size: 4rem;
+	text-transform: uppercase;
+}
+.subtitulo{
+	font-size: 1.5rem;
+}
+.boton{
+	border: solid 1px #fff;
+	text-decoration: none;
+	padding: 10px 15px;
+	display: block;
+	margin: 2rem auto;
+	width: 100px;
+}
+.barra-menu{
+	display: block;
+	width: 100%;
+	height: 7vh;
+	background: rgb(17, 52, 72);
+	position: sticky;
+	top:0;
+}
+.barra-menu ul{
+	display: flex;
+	width: 1024px;
+	margin:auto;
+}
+.barra-menu ul li{
+	display: block;
+	flex-grow: 1;
+	padding: 2vh 0;
+	text-align: center;
+}
+.cuerpo{
+	width: 100%;
+	height: 300vh;
+}
+span{
+	display: block;
+	width: 100%;
+	height: 300vh;
 }
