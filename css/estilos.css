@@ -7,12 +7,49 @@ html{
 	scroll-behavior: smooth;
 }
 
-span{
-	display: block;
+
+/*CSS DEL INICIO DE PANTALLA COMPLETA*/
+
+.contenedor-home{
+	height: 93vh;
+	background-image: url(../images/fondo_principal.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.contenedor-inicio {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.contenedor-inicio::after {
+	content: "";
+	background: rgb(17, 52, 72, .8);
 	width: 100%;
-	height: 300vh;
+	height: 100%;
+	position: absolute;
+	top: 0;
+}
+.contenedor-titulo{
+	position: absolute;
+	margin-right: 17%;
+	z-index: 1;
+}
+.titulo{
+	text-align: center;
+	color: #fff;
+	font-family: Candara;
+}
+.nombre{
+	font-size: 4rem;
+	text-transform: uppercase;
 }
 
+.subtitulo{
+	font-size: 1.5rem;
+}
 .boton{
 	border: solid 1px #fff;
 	text-decoration: none;
@@ -21,6 +58,13 @@ span{
 	margin: 2rem auto;
 	width: 100px;
 }
+.main{
+	width: 100%;
+	height: 300vh;
+}
+
+
+/*CSS DEL MENU SUPERIOR (NAV)*/
 
 .barra-menu{
 	display: block;
@@ -30,71 +74,53 @@ span{
 	position: sticky;
 	top:0;
 }
-
 .barra-menu ul{
 	display: flex;
-	width: 1024px;
+	max-width: 1024px;
 	margin:auto;
 }
-
 .barra-menu ul li{
 	display: block;
 	flex-grow: 1;
 	padding: 2vh 0;
+	cursor: pointer;
+}
+
+
+/*CSS DEL FOOTER*/
+
+.contacto{
+	padding: 10px;
+	background: rgb(17, 52, 72);
+	color:#fff;
+	font-family: Candara;
+}
+
+.containter-footer-body{
+	display: flex;
+	justify-content: space-around;
+	max-width: 1024px;
+	margin: auto;
+	margin-top: 3%;
+}
+.columns, .columns a, .columns li {
+	text-decoration: none;
+	color: #fff;
+	list-style: none;
+	padding-top: 10px;
+}
+.column1{
+	width: 40%;
+}
+.container-footer p{
+	display: block;
+	padding: 0px 10px;
+	margin: 25px 0;
 	text-align: center;
+	font-size: 1rem;
 }
-
-.contenedor {
-	height: 93vh;
-	overflow: hidden;
-	position: relative;
-}
-
-.contenedor::after {
-	content: "";
-	background: rgb(17, 52, 72,.5);
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-}
-
-.content-title{
-	position: absolute;
-	top:0;
-	margin: 35vh auto;
-	margin-left: 18vw;
-	width: 100%;
-	z-index: 1;
-}
-
-.cuerpo{
-	width: 100%;
-	height: 300vh;
-}
-
-.imgPrincipal{
-	width: 100vw;
-}
-
 .prueba {
 	display: block;
 	margin: auto;
 	margin-top: 45vh !important; 
 }
-
-.title{
-	text-align: center;
-	color: #fff;
-	font-family: Candara;
-}
-
-.titulo{
-	font-size: 4rem;
-	text-transform: uppercase;
-}
-
-.subtitulo{
-	font-size: 1.5rem;
-}
-
