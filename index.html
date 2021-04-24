@@ -7,24 +7,25 @@
 	<title>DevZone</title>
 </head>
 <body>
-	<div class="contenedor-home">
-		<div class="contenedor-inicio">
-			<div class="contenedor-titulo">
-				<p class="titulo nombre"><strong>DevZone</strong></p>
-				<p class="titulo subtitulo"><b>Fórmate online como profesional en tecnología</b></p>
-				<a class="titulo boton" href="#footer">Learn more</a>
+	<section id="inicio">
+		<div class="contenedor-home">
+			<div class="contenedor-inicio">
+				<div class="contenedor-titulo">
+					<p class="titulo nombre"><strong>DevZone</strong></p>
+					<p class="titulo subtitulo"><b>Fórmate online como profesional en tecnología</b></p>
+					<a class="titulo boton" href="#contacto">Learn more</a>
+				</div>
 			</div>
 		</div>
-	</div>
-	
+	</section>
 	<div class="main" id="main">
 		<header class="barra-menu">
 			<nav>
 				<ul>
-					<li class="titulo" >Inicio</li>
-					<li class="titulo" > <a class="opcionNav" href="#cursos">Cursos</a></li>
-					<li class="titulo" >Nosotros uwu</li>
-					<li class="titulo" >Contacto</li>
+					<li class="titulo"><a class="opcionNav" href="#inicio">INICIO</a></li>
+					<li class="titulo"><a class="opcionNav" href="#cursos">CURSOS</a></li>
+					<li class="titulo"><a class="opcionNav" href="#nosotros">NOSOTROS</a></li>
+					<li class="titulo"><a class="opcionNav" href="#contacto">CONTACTO</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -34,7 +35,9 @@
 	<article>
 		<!--CARUSEL j&g-->
 		<section id="cursos">
-		<div class="container-slider">
+			<h2><center>Algunos de nuestros cursos...</center></h2>
+			<br>
+			<div class="container-slider">
 			<div class="slider" id="slider">
 				<div class="slider-section">
 					<div class="item_description">
@@ -82,9 +85,13 @@
 				<div class="btn btn-rigth" id="btnR">&#62</div>
 				<div class="btn btn-left" id="btnL">&#60</div>
 		</div>
+		<br>
+		<button><a href="cursos.html">Ver más</a></button>
+		<script src="JavaScript/carousel.js"></script>
 		</section>
 		<br><br><br>
-		<script src="JavaScript/carousel.js"></script>
+		<section id="nosotros">
+		</section>
 		<!--GRID-->
 		<div class="grid_container">
 			<div class="grid_item"><img src="images/1.jpg" class="grid_img"></div>
@@ -96,7 +103,7 @@
 		</div>
 	</article>
 	<footer>
-		<div class="contacto">
+		<div id="contacto" class="contacto">
 			<div class="containter-footer-body" id="footer">
 				<div class="columns column1">
 					<h2>Más sobre nosotros</h2>
