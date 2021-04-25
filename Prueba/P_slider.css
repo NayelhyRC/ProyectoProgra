@@ -8,19 +8,10 @@
   align-items: center;
   user-select: none;
 }
-.carousel .carousel-item h3 {
-  width: 325px;
+.carousel .carousel-item p {
   position: absolute;
-  top: -15%;
-  font-weight: normal;
-  font-size: 25px;
-  font-family: Arial;
-}
-.carousel .carousel-item button {
-  width: 100px;
-  height: 60px;
-  position: absolute;
-  top: 80%;
+  top: 50%;
+  left: 50%;
 }
 .carousel .carousel-item img {
   width: 600px !important;
