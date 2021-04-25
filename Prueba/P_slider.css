@@ -1,9 +1,30 @@
+.carousel {
+  background-color: #4169e1;
+}
 .carousel .carousel-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   user-select: none;
-  width: 500px;
-  height: 500px;
+}
+.carousel .carousel-item h3 {
+  width: 325px;
+  position: absolute;
+  top: -15%;
+  font-weight: normal;
+  font-size: 25px;
+  font-family: Arial;
+}
+.carousel .carousel-item button {
+  width: 100px;
+  height: 60px;
+  position: absolute;
+  top: 80%;
+}
+.carousel .carousel-item img {
+  width: 600px !important;
+  height: 300px !important;
+  object-fit: cover;
+  height: 27rem;
 }
