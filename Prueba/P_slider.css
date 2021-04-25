@@ -1,5 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Candara, Verdana, sans-serif;
+}
 .carousel {
-  background-color: #4169e1;
+  background: linear-gradient(rgba(25, 209, 231, 0.5), rgba(243, 17, 224, 0.5));
 }
 .carousel .carousel-item {
   display: flex;
@@ -8,14 +13,10 @@
   align-items: center;
   user-select: none;
 }
-.carousel .carousel-item p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
 .carousel .carousel-item img {
   width: 600px !important;
   height: 300px !important;
   object-fit: cover;
   height: 27rem;
 }
+.item.-

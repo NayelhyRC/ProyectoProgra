@@ -8,6 +8,12 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --bg-color-pantalla-inicio: rgb(17, 52, 72, 0.7);
+  --bg-color-principal: rgb(17, 52, 72);
+  --bg-color-secundario: #14bf98;
+}
+
 /*CSS DEL INICIO DE PANTALLA COMPLETA*/
 
 .contenedor-home {
@@ -26,7 +32,7 @@ html {
 }
 .contenedor-inicio::after {
   content: "";
-  background: rgb(17, 52, 72, 0.8);
+  background: var(--bg-color-pantalla-inicio);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -74,8 +80,8 @@ html {
 .barra-menu {
   display: block;
   max-width: 100%;
-  height: 7vh;
-  background: rgb(17, 52, 72);
+  height: 8vh;
+  background: var(--bg-color-principal);
   position: sticky;
   top: 0;
 }
@@ -95,7 +101,7 @@ html {
 
 .contacto {
   padding: 10px;
-  background: rgb(17, 52, 72);
+  background: var(--bg-color-principal);
   color: #fff;
 }
 
@@ -111,7 +117,8 @@ html {
 .columns li {
   color: #fff;
   list-style: none;
-  padding-top: 10px;
+  padding: 10px 8px 0px 8px;
+  text-align: justify;
 }
 .column1 {
   width: 40%;
@@ -123,7 +130,8 @@ html {
   padding: 7px 7px;
   text-align: center;
   font-size: 1rem;
-  background-color: black;
+  /* color: var(--bg-color-principal); */
+  background-color: var(--bg-color-secundario);
 }
 /*CSS Carousel*/
 .container-slider {
