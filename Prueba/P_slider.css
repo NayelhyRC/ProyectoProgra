@@ -3,20 +3,49 @@
   padding: 0;
   font-family: Candara, Verdana, sans-serif;
 }
-.carousel {
-  background: linear-gradient(rgba(25, 209, 231, 0.5), rgba(243, 17, 224, 0.5));
-}
-.carousel .carousel-item {
+.carousel-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   user-select: none;
+  height: 450px !important;
 }
-.carousel .carousel-item img {
-  width: 600px !important;
-  height: 300px !important;
+.carousel-item img {
+  width: 350px !important;
+  height: 250px !important;
   object-fit: cover;
   height: 27rem;
 }
-.item.-
+.item-description {
+  color: #fff;
+  text-align: center;
+  background: rgba(17, 52, 72, 0.829);
+  width: 350px;
+  height: 350px;
+}
+.item-description h3 {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: -15px;
+  font-size: 20px;
+}
+.item-description h2 {
+  margin-top: 5px;
+  font-size: 30px;
+}
+.item-description button {
+  font-size: 18px;
+  margin-top: -5px;
+  width: 120px;
+  height: 45px;
+  left: 15%;
+  color: #ffffff;
+  background-color: #0b2cc0;
+  border-radius: 6px;
+  border: 2px solid #0016b0;
+}
+.item-description button:hover {
+  color: #000000;
+  background-color: #ffffff;
+}

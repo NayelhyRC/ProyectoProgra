@@ -1,58 +1,9 @@
 @import url(estilos.css);
-:root {
-  --bg-color-pantalla-inicio: rgb(17, 52, 72, 0.7);
-  --bg-color-principal: rgb(17, 52, 72);
-  --bg-color-secundario: #14bf98;
-}
-
-.card-curso {
-  width: 18%;
-  height: 17vw;
-  display: inline-block;
-  margin: 20px 5px 5px 5px;
-  min-width: 230px;
-  min-height: 280px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
-}
 
 .container-cursos {
   height: 80%;
-  width: 95%;
-  border-radius: 1vw;
-  /* border-color: var(--bg-color-principal); */
-  /* border-width: 0.5px;
-  border-top-style: solid;
-  border-bottom-style: solid; */
-  margin: 0 auto;
-  margin-bottom: 3vw;
-  padding-bottom: 2vw;
-  text-align: center;
-}
-
-.cursos-categoria-menu {
-  height: 80%;
-  width: 90%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.cursos-categoria-menu li {
-  margin-bottom: 5px;
-  bottom: -20px;
-  color: white;
-  display: inline-block;
-  padding: 5px 20px 5px 20px;
-  background-color: var(--bg-color-secundario);
-  border-radius: 5px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.cursos-categoria-menu li:hover {
-  background-color: var(--bg-color-pantalla-inicio);
-}
-
-.link-cat {
-  color: white;
-  text-decoration: none;
+  width: 100%;
+  /* margin: 10px 3vw 10px 3vw; */
+  padding-left: 20px;
+  background-color: black;
 }
