@@ -3,10 +3,47 @@
   padding: 0;
   font-family: Candara, Verdana, sans-serif;
 }
+
+:root {
+  --bg-color-pantalla-inicio: rgb(17, 52, 72, 0.7);
+  --bg-color-principal: rgb(17, 52, 72);
+  --bg-color-secundario: #14bf98;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
+h1 {
+  padding-top: 2rem;
+}
+
+button {
+  margin-bottom: 5px;
+  color: white;
+  display: inline-block;
+  padding: 5px 20px 5px 20px;
+  background-color: var(--bg-color-secundario);
+  border-radius: 5.5px;
+  border-width: 0;
+  justify-items: center;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+button:hover {
+  width: 7.3em;
+  height: 2.2em;
+}
+
+#boton-VerMas {
+  text-align: center;
+}
 /*CSS DEL INICIO DE PANTALLA COMPLETA*/
 
 .contenedor-home {
@@ -25,7 +62,7 @@ html {
 }
 .contenedor-inicio::after {
   content: "";
-  background: rgb(17, 52, 72, 0.8);
+  background: var(--bg-color-pantalla-inicio);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -40,6 +77,18 @@ html {
 .opcionNav {
   text-decoration: none;
   color: white;
+  padding: 1px 0.5em 0px 0.5em;
+  cursor: none;
+}
+
+.opcionNav:hover {
+  font-size: 1.3rem;
+  font-weight: 550;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--bg-color-secundario);
+  border-radius: 6px;
+  color: var(--bg-color-secundario);
 }
 
 .titulo {
@@ -63,6 +112,7 @@ html {
   margin: 2rem auto;
   width: 100px;
 }
+
 .main {
   width: 100%;
   height: 30vh;
@@ -73,14 +123,15 @@ html {
 .barra-menu {
   display: block;
   max-width: 100%;
-  height: 7vh;
-  background: rgb(17, 52, 72);
+  height: 7.5vh;
+  background: var(--bg-color-principal);
   position: sticky;
   top: 0;
 }
 .barra-menu ul {
   display: flex;
   max-width: 1024px;
+  font-size: 1.2rem;
   margin: auto;
 }
 .barra-menu ul li {
@@ -94,7 +145,7 @@ html {
 
 .contacto {
   padding: 10px;
-  background: rgb(17, 52, 72);
+  background: var(--bg-color-principal);
   color: #fff;
 }
 
@@ -102,6 +153,7 @@ html {
   display: flex;
   justify-content: space-around;
   max-width: 1024px;
+  text-align: justify;
   margin: 7vw;
   margin-top: 3%;
 }
@@ -110,19 +162,30 @@ html {
 .columns li {
   color: #fff;
   list-style: none;
+  text-decoration: none;
   padding-top: 10px;
 }
+
+.columns a:hover {
+  color: var(--bg-color-secundario);
+}
+
 .column1 {
   width: 40%;
+}
+
+.column2 {
+  padding-right: 0.8rem;
+  padding-left: 0.8rem;
 }
 .container-footer p {
   display: block;
   padding: 0px 10px;
-  margin: 25px 0;
+  /* margin: 25px 0; */
   padding: 7px 7px;
   text-align: center;
   font-size: 1rem;
-  background-color: black;
+  background-color: var(--bg-color-secundario);
 }
 /*CSS Carousel*/
 .container-slider {

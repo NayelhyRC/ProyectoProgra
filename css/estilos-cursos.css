@@ -7,7 +7,7 @@
 
 .card-curso {
   width: 18%;
-  height: 17vw;
+  height: 10rem;
   display: inline-block;
   margin: 20px 5px 5px 5px;
   min-width: 230px;
@@ -16,21 +16,15 @@
 }
 
 .container-cursos {
-  height: 80%;
   width: 95%;
-  border-radius: 1vw;
-  /* border-color: var(--bg-color-principal); */
-  /* border-width: 0.5px;
-  border-top-style: solid;
-  border-bottom-style: solid; */
   margin: 0 auto;
-  margin-bottom: 3vw;
-  padding-bottom: 2vw;
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+  /* padding-bottom: 10vh; */
   text-align: center;
 }
 
 .cursos-categoria-menu {
-  height: 80%;
   width: 90%;
   margin: 0 auto;
   text-align: center;
@@ -38,7 +32,6 @@
 
 .cursos-categoria-menu li {
   margin-bottom: 5px;
-  bottom: -20px;
   color: white;
   display: inline-block;
   padding: 5px 20px 5px 20px;
@@ -54,5 +47,4 @@
 
 .link-cat {
   color: white;
-  text-decoration: none;
 }
