@@ -1,10 +1,3 @@
-:root {
-  --bg-color-pantalla-inicio: rgb(17, 52, 72, 0.6);
-  --bg-color-principal: rgb(17, 52, 72);
-  --bg-color-secundario: #14bf98;
-  --radio-borde-div: 20px;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -27,8 +20,7 @@
 .item-description {
   color: #fff;
   text-align: center;
-  background: var(--bg-color-principal);
-  /*background: rgba(17, 52, 72, 0.829);*/
+  background: rgba(17, 52, 72, 0.829);
   width: 350px;
   height: 350px;
 }
@@ -56,5 +48,4 @@
 .item-description button:hover {
   color: #000000;
   background-color: #ffffff;
-  transition: 0.5s;
 }
