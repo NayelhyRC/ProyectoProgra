@@ -1,6 +1,6 @@
 @import url(estilos.css);
 :root {
-  --bg-color-pantalla-inicio: rgb(17, 52, 72, 0.7);
+  --bg-color-pantalla-inicio: rgb(17, 52, 72, 0.6);
   --bg-color-principal: rgb(17, 52, 72);
   --bg-color-secundario: #14bf98;
 }
@@ -43,6 +43,10 @@
 
 .cursos-categoria-menu li:hover {
   background-color: var(--bg-color-pantalla-inicio);
+}
+
+.cursos-categoria-menu li:active {
+  background-color: var(--bg-color-principal);
 }
 
 .link-cat {
