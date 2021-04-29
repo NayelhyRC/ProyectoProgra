@@ -3,6 +3,7 @@
   --bg-color-pantalla-inicio: rgb(17, 52, 72, 0.6);
   --bg-color-principal: rgb(17, 52, 72);
   --bg-color-secundario: #14bf98;
+  --radio-borde-div: 20px;
 }
 
 .card-curso {
@@ -51,4 +52,43 @@
 
 .link-cat {
   color: white;
+}
+/* estilos nosotros.html */
+/* .nosotros-h2 {
+  margin-left: 3vw;
+} */
+
+.container-main-nosotros h2 {
+  margin-left: 3vw;
+}
+
+.container-mision-vision h3 {
+  margin-left: 4vw;
+}
+
+.container-historia {
+  display: flex;
+  /* align-items: flex-wrap; */
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.img-nosotros {
+  box-shadow: rgba(17, 52, 72, 0.4) 5px 5px, rgba(17, 52, 72, 0.3) 10px 10px,
+    rgba(17, 52, 72, 0.2) 15px 15px, rgba(17, 52, 72, 0.1) 20px 20px,
+    rgba(17, 52, 72, 0.05) 25px 25px;
+  border-radius: var(--radio-borde-div);
+  width: 45%;
+  min-width: 250px;
+  height: auto;
+}
+
+.text-historia {
+  width: 35%;
+  box-shadow: rgba(17, 52, 72, 0.4) 5px 5px, rgba(17, 52, 72, 0.3) 10px 10px,
+    rgba(17, 52, 72, 0.2) 15px 15px, rgba(17, 52, 72, 0.1) 20px 20px,
+    rgba(17, 52, 72, 0.05) 25px 25px;
+  border-radius: var(--radio-borde-div);
 }
