@@ -9,6 +9,7 @@
   --bg-color-principal: rgb(17, 52, 72);
   --bg-color-secundario: #14bf98;
   --radio-borde-div: 20px;
+  --margin-div-img: 1.5rem;
 }
 a {
   text-decoration: none;
@@ -59,6 +60,10 @@ h1 {
 h2 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+p {
+  line-height: 25px;
 }
 
 #boton-VerMas {
@@ -131,8 +136,20 @@ h2 {
   display: block;
   margin: 2rem auto;
   width: 100px;
+  transition: all 0.3s ease-in;
+}
+.titulo.boton img {
+  height: 0.7em;
+  display: none;
 }
 
+.titulo.boton:hover {
+  background: var(--bg-color-principal);
+  width: 115px;
+}
+.titulo.boton:hover img {
+  display: initial;
+}
 .main {
   width: 100%;
   height: 30vh;
@@ -170,9 +187,10 @@ h2 {
   text-align: center;
   color: #fff;
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  /* justify-content: space-around; */
 }
 
 .container-somos {
@@ -182,7 +200,7 @@ h2 {
   border-radius: var(--radio-borde-div);
   /* margin: 2rem 1rem; */
   /* margin: 0 auto; */
-  margin-bottom: 1rem;
+  margin-bottom: var(--margin-div-img);
   width: 40%;
 }
 
@@ -191,12 +209,28 @@ h2 {
   border-radius: var(--radio-borde-div);
   padding: 1rem 1rem 1.5rem 1rem;
   text-align: justify;
-  margin-bottom: 1rem;
-  width: 45%;
+  margin-bottom: var(--margin-div-img);
+  width: 40%;
 }
 
 .container-elegirnos ul {
   margin: 1.5rem;
+}
+
+.img-somos {
+  /* border-right-style: solid;
+  border-width: 7px;
+  border-color: var(--bg-color-principal);
+  border-top-right-radius: var(--radio-borde-div); */
+  width: 35%;
+  min-width: 250px;
+  display: inline-block;
+  height: auto;
+  margin: var(--margin-div-img);
+}
+
+.img-somos img {
+  width: 100%;
 }
 
 /*CSS DEL FOOTER*/
@@ -240,7 +274,8 @@ h2 {
   /* margin: 25px 0; */
   padding: 7px 7px;
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  color: #fff;
   background-color: var(--bg-color-secundario);
 }
 /*CSS Carousel*/
@@ -326,6 +361,7 @@ h2 {
   display: flex;
   width: 100%;
   justify-content: center;
+  display: flex;
 }
 .grid_container {
   display: grid;
@@ -340,11 +376,11 @@ h2 {
   border-radius: 1em;
   overflow: hidden;
   width: 100%;
-  /* height: 250px; */
+  height: 220px;
 }
 .grid_img {
   width: 100%;
-  height: auto;
+  height: 220px;
   object-fit: cover;
 }
 .grid_item img:hover {
@@ -404,5 +440,32 @@ h2 {
   .contenedor-titulo {
     position: absolute;
     margin: auto;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  /*CSS DEL FOOTER*/
+  .contacto {
+    padding: 10px;
+    background-color: var(--bg-color-principal);
+  }
+
+  .containter-footer-body {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: initial;
+  }
+  .columns,
+  .columns a,
+  .columns li {
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+    width: 100%;
+  }
+  .column1,
+  .column2 {
+    border-bottom: solid 1px var(--bg-color-secundario);
+    padding: 10px 0;
   }
 }

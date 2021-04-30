@@ -14,7 +14,7 @@ setInterval(function () {
 
 function slides() {
   slider.style.transform = "translate(" + -width * contador + "px)";
-  slider.style.transition = "transform .8s";
+  slider.style.transition = "transform 3s";
   contador++;
 
   if (contador === sliderIndividual.length) {
@@ -22,6 +22,6 @@ function slides() {
       slider.style.transform = "translate(0px)";
       slider.style.transition = "transform 0s";
       contador = 1;
-    }, 1500);
+    }, 2790);
   }
 }
