@@ -4,10 +4,6 @@ let contador = 1;
 let width = sliderIndividual[0].clientWidth;
 let intervalo = 3000;
 
-window.addEventListener("resize", function () {
-  width = sliderIndividual[0].clientWidth;
-});
-
 setInterval(function () {
   slides();
 }, intervalo);
