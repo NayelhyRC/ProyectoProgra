@@ -162,9 +162,13 @@ body,
     width: 500px;
   }
 }
+.btn-close {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+}
 .contenedor-modal label {
   position: absolute;
-  background-color: white;
   font-size: 15px;
   cursor: pointer;
   border-radius: 50%;

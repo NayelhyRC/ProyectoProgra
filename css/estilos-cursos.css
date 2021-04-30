@@ -62,11 +62,20 @@
 } */
 
 .container-main-nosotros h2 {
-  margin-left: 2rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-bottom: 0.8rem;
+  border-bottom: solid 3px var(--bg-color-principal);
 }
 
-/* .container-mision-vision h3 {
-  margin-left: 3rem;
+.container-mision-vision h3 {
+  font-size: 1.4em;
+  color: var(--bg-color-principal);
+  /* font-weight: 800; */
+}
+
+/* .container-mision-vision h3:hover {
+  font-size: 2em;
 } */
 
 .container-historia {
@@ -171,9 +180,12 @@
   margin: var(--margin-div-img);
 }
 
+.vision:hover {
+}
+
 .vision p {
   border-right: solid 7px var(--bg-color-principal);
-  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .img-vision {

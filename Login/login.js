@@ -6,7 +6,7 @@ const btnR = document.querySelector("#btnR");
 const btnL = document.querySelector("#btnL");
 
 
-singup.style.transition="all 0.5s"
+singup.style.transition="all 0.5s";
 login.style.transition = "all 0.5s";
 
 function next() {

@@ -19,6 +19,13 @@ html {
   scroll-behavior: smooth;
 }
 
+img:hover {
+  transition: 2s;
+  transform: scale(1.1, 1.1);
+  border-radius: 20px;
+  /* box-shadow: 0 0 8px 8px white inset; */
+}
+
 button {
   margin-bottom: 5px;
   color: white;
