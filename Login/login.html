@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <input type="checkbox" id="btn-modal">
+	<label for="btn-modal" class="lbl-modal">Abrir Modal</label>
+    <div class="modal" id="close">
+		<div class="contenedor-modal">
+			<label for="btn-modal">X</label>
+				<div class="contenedor">
+                    <h1><strong>DEVZONEEE</strong></h1>
+                    <div class="contenedorLR">
+                        <div class="contenedor-item">
+                            <div class="item">
+                                <div class="login">
+                                <div class="datos">
+                                    <input type="text" placeholder="Username"><br><br>
+                                    <hr>
+                                    <input type="password" placeholder="Password"><br><br>
+                                    <hr>
+                                </div>
+                                <div class="opc">
+                                    <input type="submit" name="Login" value="INICIAR">
+                                    <!--<input type="submit" name="Singup" value="SINGUP">-->
+                                </div>
+                                <p>¿Aun no creas tu cuenta?<a href="#" id="btnR"> REGISTRATE </a></p>
+                            </div>
+                            </div>
+                            <div class="item">
+                                <div class="singup">
+                                    <div class="datos">
+                                        <input type="text" placeholder="Username"><br><br>
+                                        <hr>
+                                        <input type="email" placeholder="Example@mail.com"><br><br>
+                                        <hr>
+                                        <input type="password" placeholder="Password"><br><br>
+                                        <hr>
+                                        <input type="password" placeholder="Confirm Password"><br><br>
+                                        <hr>
+                                    </div>
+                                    <div class="opc">
+                                        <!--<input type="submit" name="Login" value="LOGIN">-->
+                                        <input type="submit" name="Singup" value="REGISTRARSE">
+                                    </div>
+                                    <p>¿Ya tienes una cuenta?<a href="#" id="btnL">Inicia Sesion</a></p>
+                                </div>   
+                            </div>    
+                    </div>
+                </div>
+                <script src="login.js"></script>
+                </div>
+		</div>
+	</div>
+</body>
+</html>
