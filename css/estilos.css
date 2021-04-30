@@ -103,7 +103,7 @@ p {
   text-decoration: none;
   color: white;
   padding: 1px 0.5em 0px 0.5em;
-  cursor: none;
+  /* cursor: none; */
 }
 
 .opcionNav:hover {
