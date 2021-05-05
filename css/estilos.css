@@ -11,13 +11,21 @@
   --radio-borde-div: 20px;
   --margin-div-img: 1.5rem;
 }
+
+@font-face{
+  font-family: ‘kollektifregular’;
+src: url(‘https://tuweb.co/fuentes/kollektif-webfont.woff2′) format(‘woff2’),
+url(‘https://tuweb.co/fuentes/kollektif-webfont.woff’) format(‘woff’);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 16px;
+}
 a {
   text-decoration: none;
   color: white;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 img:hover {
@@ -66,24 +74,29 @@ p {
   line-height: 25px;
 }
 
+.child-container{
+  width: 100%;
+  max-width: 1440px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
 #boton-VerMas {
   text-align: center;
 }
 /*CSS DEL INICIO DE PANTALLA COMPLETA*/
 
 .contenedor-home {
-  height: 93vh; /*
-  background-image: url(https://drive.google.com/uc?id=13DsfW76MPJbDWFh7qMKB58C8brY7khuF);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  position: relative;*/
+  height: 93vh;
   overflow: hidden;
+  color: #fff;
 }
 .contenedor-inicio {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  position: relative;
 }
 .contenedor-inicio::after {
   content: "";
@@ -95,46 +108,30 @@ p {
 }
 .contenedor-titulo {
   position: absolute;
-  margin-right: 17%;
+  width: 50%;
   z-index: 1;
-}
-
-.opcionNav {
-  text-decoration: none;
-  color: white;
-  padding: 1px 0.5em 0px 0.5em;
-  /* cursor: none; */
-}
-
-.opcionNav:hover {
-  font-size: 1.3rem;
-  font-weight: 550;
-  border-style: solid;
-  border-width: 2px;
-  border-color: var(--bg-color-secundario);
-  border-radius: 10px;
-  color: var(--bg-color-secundario);
 }
 
 .titulo {
   text-align: center;
-  color: #fff;
   font-family: Candara;
+  font-weight: bold;
 }
 .nombre {
-  font-size: 4rem;
+  font-size: 4em;
   text-transform: uppercase;
 }
 
 .subtitulo {
-  font-size: 1.5rem;
+  margin: 1em 0;
+  font-size: 1.5em;
 }
 .boton {
   border: solid 1px #fff;
   text-decoration: none;
   padding: 10px 15px;
   display: block;
-  margin: 2rem auto;
+  margin: 1em auto;
   width: 100px;
   transition: all 0.3s ease-in;
 }
@@ -151,8 +148,8 @@ p {
   display: initial;
 }
 .main {
+  display: block;
   width: 100%;
-  height: 30vh;
 }
 
 /*CSS DEL MENU SUPERIOR (NAV)*/
@@ -160,23 +157,36 @@ p {
 .barra-menu {
   display: block;
   max-width: 100%;
-  /* height: 7.5vh; */
-  height: 3em;
+  height: 7.5vh;
   background: var(--bg-color-principal);
   position: sticky;
+  color: #fff;
   top: 0;
 }
 .barra-menu ul {
   display: flex;
   max-width: 1024px;
-  font-size: 1.2rem;
   margin: auto;
 }
 .barra-menu ul li {
   display: block;
   flex-grow: 1;
   padding: 2vh 0;
+  line-height: 3vh;
   cursor: pointer;
+}
+.opcionNav {
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.opcionNav:hover {
+  padding: 0 0.5em;
+  font-size: 1.3em;
+  font-weight: bold;
+  border: solid 2px var(--bg-color-secundario);
+  border-radius: 10px;
+  color: var(--bg-color-secundario);
 }
 
 /* CSS DEL CONTAINER "NOSOTROS" */
@@ -244,7 +254,7 @@ p {
   justify-content: space-around;
   max-width: 1024px;
   text-align: justify;
-  margin: 7vw;
+  margin: 7vw auto;
   margin-top: 3%;
 }
 .columns,
@@ -265,8 +275,7 @@ p {
 }
 
 .column2 {
-  padding-right: 0.8rem;
-  padding-left: 0.8rem;
+  padding: 0 0.8rem;
 }
 .container-footer p {
   display: block;
@@ -420,52 +429,4 @@ p {
 .contenido-slider > img {
   width: 100%;
   object-fit: cover;
-}
-
-@media screen and (max-width: 900px) {
-  .contenido-slider > img {
-    width: 100%;
-    height: 100%;
-  }
-  .contenedor-titulo {
-    position: absolute;
-    margin-right: 17%;
-    flex-direction: column-reverse;
-  }
-}
-@media screen and (max-width: 600px) {
-  .contenido-slider {
-    flex-direction: column-reverse;
-  }
-  .contenedor-titulo {
-    position: absolute;
-    margin: auto;
-  }
-}
-
-@media screen and (max-width: 780px) {
-  /*CSS DEL FOOTER*/
-  .contacto {
-    padding: 10px;
-    background-color: var(--bg-color-principal);
-  }
-
-  .containter-footer-body {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: initial;
-  }
-  .columns,
-  .columns a,
-  .columns li {
-    color: #fff;
-    list-style: none;
-    text-decoration: none;
-    width: 100%;
-  }
-  .column1,
-  .column2 {
-    border-bottom: solid 1px var(--bg-color-secundario);
-    padding: 10px 0;
-  }
 }
