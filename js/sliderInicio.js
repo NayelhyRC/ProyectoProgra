@@ -1,9 +1,14 @@
 let slider = document.querySelector(".slider-contenedor");
 let sliderIndividual = document.querySelectorAll(".contenido-slider");
 let contador = 1;
-let width = sliderIndividual[0].clientWidth;
 let intervalo = 3000;
-
+var width;
+function VerficarWitdh() {
+  width = sliderIndividual[0].clientWidth;
+}
+setInterval(function () {
+  VerficarWitdh();
+}, 100);
 setInterval(function () {
   slides();
 }, intervalo);
