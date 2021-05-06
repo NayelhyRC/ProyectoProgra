@@ -12,10 +12,10 @@
   --margin-div-img: 1.5rem;
 }
 
-@font-face{
+@font-face {
   font-family: ‘kollektifregular’;
-src: url(‘https://tuweb.co/fuentes/kollektif-webfont.woff2′) format(‘woff2’),
-url(‘https://tuweb.co/fuentes/kollektif-webfont.woff’) format(‘woff’);
+  src: url(‘https://tuweb.co/fuentes/kollektif-webfont.woff2′) format(‘woff2’),
+    url(‘https://tuweb.co/fuentes/kollektif-webfont.woff’) format(‘woff’);
 }
 html {
   scroll-behavior: smooth;
@@ -74,11 +74,18 @@ p {
   line-height: 25px;
 }
 
-.child-container{
+.child-container {
   width: 100%;
   max-width: 1440px;
   box-sizing: border-box;
   margin: auto;
+}
+
+.unselectable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 #boton-VerMas {
@@ -241,6 +248,69 @@ p {
 
 .img-somos img {
   width: 100%;
+}
+/*CSS DE LAS CATEGORIAS*/
+.categorias {
+  max-width: 1440px;
+  margin: auto;
+}
+.cards-categorias {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.categoria {
+  margin: 2% auto;
+  width: 200px;
+  height: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  background: inherit;
+  color: #19b888;
+  border: #19b888 solid 2px;
+  border-radius: 10px;
+  transition: all ease 0.3s;
+}
+.categoria:nth-child(2) {
+  border: #ff8a3d solid 2px;
+  color: #ff8a3d;
+}
+.categoria:nth-child(3) {
+  border: #000000 solid 2px;
+  color: #000000;
+}
+.categoria:nth-child(4) {
+  border: #3d64ff solid 2px;
+  color: #3d64ff;
+}
+.categoria:hover {
+  background: #19b888;
+  color: #fff;
+  border: #19b888 solid 2px;
+  transform: scale(1.2);
+}
+.categoria:nth-child(2):hover {
+  background: #ff8a3d;
+  color: #fff;
+  border: #ff8a3d solid 2px;
+  transform: scale(1.2);
+}
+.categoria:nth-child(3):hover {
+  background: #000000;
+  color: #fff;
+  border: #000000 solid 2px;
+  transform: scale(1.2);
+}
+.categoria:nth-child(4):hover {
+  background: #3d64ff;
+  color: #fff;
+  border: #3d64ff solid 2px;
+  transform: scale(1.2);
 }
 
 /*CSS DEL FOOTER*/
