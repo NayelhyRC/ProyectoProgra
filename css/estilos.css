@@ -70,6 +70,10 @@ h2 {
   padding-bottom: 1.5rem;
 }
 
+h3 {
+  font-weight: bold;
+}
+
 p {
   line-height: 25px;
 }
@@ -225,9 +229,15 @@ p {
   background-color: var(--bg-color-principal);
   border-radius: var(--radio-borde-div);
   padding: 1rem 1rem 1.5rem 1rem;
-  text-align: justify;
+  /* text-align: justify; */
   margin-bottom: var(--margin-div-img);
   width: 40%;
+}
+
+.elegirnos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .container-elegirnos ul {
