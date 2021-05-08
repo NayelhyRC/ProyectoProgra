@@ -5,32 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="css/estilos-cursos.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="iconos/style.css">
     <title>DevZone - Cursos</title>
   </head>
   <body>
     <div class="main" id="main">
-      <header class="barra-menu">
-        <nav>
-          <ul>
-            <li class="titulo">
-              <a class="opcionNav" href="index.html">INICIO</a>
-            </li>
-            <li class="titulo">
-              <a class="opcionNav" href="cursos.html">CURSOS</a>
-            </li>
-            <li class="titulo">
-              <a class="opcionNav" href="index.html #nosotros">NOSOTROS</a>
-            </li>
-            <li class="titulo">
-              <a class="opcionNav" href="#contacto">CONTACTO</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    
-
+        <header class="barra-menu header unselectable">
+            <nav>
+              <input type="checkbox" id="toggle"/>
+              <label class="menu-icon" for="toggle"></label>
+              <ul>
+                <li class="titulo"><a class="opcionNav" href="index.html">INICIO</a></li>
+                <li class="titulo"><a class="opcionNav" href="index.html #nosotros">NOSOTROS</a></li>
+                <li class="titulo"><a class="opcionNav" href="cursos.html">CURSOS</a></li>
+                <li class="titulo"><a class="opcionNav" href="index.html #testimonios">TESTIMONIOS</a></li>
+                <li class="titulo"><a class="opcionNav" href="#contacto">CONTACTO</a></li>				
+              </ul>
+            </nav>
+          </header>
+  
     <section>
         <div class="container-main-nosotros">
+          <!-- 
           <h2>Nuestra historia</h2>
           <div class="container-historia">
             <div class="img-nosotros">
@@ -52,18 +49,19 @@
               </p>
             </div>
           </div>
-          
+          -->
           <h2>¿Quiénes somos?</h2>
           <div class="container-historia">
             <div class="text-quienes">
               <p>
-                Somos una empresa que inició como Startup en la región Lambayeque, pero que 
-                a lo largo del tiempo ha crecido exponencialmente y llegado a posicionarse como una 
-                de las empresas que brinda educación virtual más conocidas a nivel nacional, con miras
-                hacia el exterior del país.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptas suscipit
-                neque aperiam quo! Quaerat quasi fugit, praesentium distinctio deleniti soluta? 
-                Sunt beatae quibusdam a molestiae non consequatur omnis temporibus!
+                Somos una empresa que ha llegado a posicionarse como una 
+                de las empresas de educación virtual más conocidas a nivel nacional, con miras
+                a la internacionalización.
+                Esta plataforma surge con la intención de brindar 
+                una educación de calidad para todo el mundo.<br>
+                Si bien la educación digital es un campo desafiante, DevZonee ha 
+                podido adaptarse a las necesidades cambiantes de la industria mientras 
+                mantiene al estudiante en el centro de todo lo que hace.
               </p>
             </div>
             
@@ -71,13 +69,10 @@
               <div class="mision">
                 <h3>Misión</h3>
                 <p>
-                  En DevZone buscamos brindar educación, a nivel nacional e internacional, 
-                  venciendo las barreras geográficas, pues creemos que la educación debe ser 
-                  accesible para todo el mundo, inspirando a miles de personas a cambiar sus 
+                  En DevZone buscamos brindar educación, venciendo las barreras geográficas, 
+                  pues creemos que la educación debe ser accesible para todo el mundo, 
+                  inspirando a miles de personas a cambiar sus 
                   vidas, cumpliendo sus metas, y trazándose unas nuevas.
-                  Asimismo, estamos comprometidos con brindar un buen y satisfactorio 
-                  servicio a nuestros clientes, ya sea tomando cualquiera de nuestros cursos 
-                  y/o poniéndose en contacto con nuestros mentores y asesores.                  
                 </p>
               </div>
 
@@ -94,11 +89,9 @@
                   <p>
                     Desarrollar el  mejor modelo educativo para entornos de aprendizaje virtual y 
                     convertirnos en el primer referente de calidad en el campo de la enseñanza a distancia, 
-                    ofreciendo un amplio catálogo de cursos para todas las necesidades y que cumplan con 
-                    todas las expectativas de nuestro público, quién tendrá una gran confianza en nosotros
-                    y nuestros adecuados estándares de selección de contenido y mentores, haciendo de DevZone
-                    parte de la vida de nuestros estudiantes y su crecimiento profesional.
-                      
+                    ofreciendo un amplio catálogo de cursos que cumplan con las expectativas de nuestro 
+                    público, haciendo de DevZone parte de la vida de nuestros estudiantes y su crecimiento 
+                    profesional.
                   </p>
               </div>
           </div>
@@ -171,10 +164,10 @@
   <div class="column3">
     <div class="container-footer">
       <p>
-        Copyright &#169; Devzonee 
+        Copyright &#169; Devzone 
         <script type='text/javascript'>
           var creditsyear = new Date();document.write(creditsyear.getFullYear());
-        </script>. All rights reserved
+        </script>. Todos los derechos reservados
       </p>
     </div>
   </div>

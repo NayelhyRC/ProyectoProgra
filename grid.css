@@ -52,11 +52,11 @@ body {
   display: grid;
   gap: 10px;
   grid-template:
-    "header"  100px
-    "navbar"  50px
-    "main"    auto
+    "header" 100px
+    "navbar" 50px
+    "main" auto
     "sidebar" 100px
-    "footer"  100px;
+    "footer" 100px;
 }
 
 @media (min-width: 600px) {
@@ -72,18 +72,18 @@ body {
     grid-template:
       "header  header" 100px
       "navbar  navbar" 50px
-      "sidebar main"   auto
+      "sidebar main" auto
       "footer  footer" 100px /
-      200px    auto;
+      200px auto;
   }
 }
 
 @media (min-width: 900px) {
   .grid-container {
     grid-template:
-      "header  header header"  100px
+      "header  header header" 100px
       "navbar  main   sidebar" auto
-      "footer  footer footer"  100px /
-      200px    auto   200px;
+      "footer  footer footer" 100px /
+      200px auto 200px;
   }
 }

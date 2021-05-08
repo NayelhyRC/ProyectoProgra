@@ -23,6 +23,10 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
 }
 
+.card-curso:hover {
+  cursor: pointer;
+}
+
 .img-card {
   width: 90%;
   height: 75%;
@@ -76,7 +80,7 @@
 
 .cursos-categoria-menu li:hover {
   background-color: var(--bg-color-pantalla-inicio);
-  border-bottom: solid 3px var(--bg-color-principal);
+  /* border-bottom: solid 3px var(--bg-color-principal); */
 }
 
 .cursos-categoria-menu li:active {
@@ -97,7 +101,7 @@
 }
 
 .container-mision-vision h3 {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   color: var(--bg-color-principal);
 }
 
@@ -146,10 +150,11 @@
   border-left-style: solid;
   border-width: 7px;
   border-color: var(--bg-color-secundario);
-  padding-left: 0.5em;
+  padding-left: 0.6em;
   text-align: justify;
   margin: var(--margin-div-img);
   margin-top: 1em;
+  /* margin-right: 7px; */
 }
 
 .container-mision-vision {
@@ -166,7 +171,7 @@
 .mision {
   background-color: var(--bg-color-pantalla-inicio);
   color: white;
-  padding: 1.5rem 1rem;
+  padding: 1rem;
   border-top-left-radius: var(--radio-borde-div);
   width: 40%;
   margin: var(--margin-div-img);
@@ -185,7 +190,7 @@
   border-width: 7px;
   border-color: var(--bg-color-principal);
   width: 43%;
-  min-width: 250px;
+  /* min-width: 200px; */
   display: inline-block;
   height: auto;
   margin: var(--margin-div-img);
@@ -201,13 +206,10 @@
 .vision {
   background-color: var(--bg-color-pantalla-inicio);
   color: white;
-  padding: 1.5rem 1rem;
+  padding: 1rem;
   border-bottom-right-radius: var(--radio-borde-div);
   width: 40%;
   margin: var(--margin-div-img);
-}
-
-.vision:hover {
 }
 
 .vision p {
@@ -221,7 +223,7 @@
   border-width: 7px;
   border-color: var(--bg-color-principal);
   width: 43%;
-  min-width: 250px;
+  /* min-width: 200px; */
   display: inline-block;
   height: auto;
   margin: var(--margin-div-img);
@@ -234,3 +236,4 @@
 }
 
 #img-larga {
+}

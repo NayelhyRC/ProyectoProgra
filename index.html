@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="iconos/style.css">
+	<script src="js/principal.js"></script>
 	<title>DevZone</title>
 </head>
 <body>
@@ -14,7 +16,7 @@
 				<div class="contenedor-titulo">
 					<p class="titulo nombre"><strong>DEVZONE</strong></p>
 					<p class="titulo subtitulo">La educación es más accesible que nunca</p>
-					<a class="titulo boton" href="#cursos">Conoce más <img src="https://drive.google.com/uc?id=1F-6koUamYNLVgXohpjUycUDQQki-Os72"></a>
+					<a class="titulo boton" href="#nosotros">Empezar<br><img src="https://drive.google.com/uc?id=1F-6koUamYNLVgXohpjUycUDQQki-Os72"></a>
 				</div>
 				
 
@@ -46,107 +48,101 @@
 		</div>
 	</section>
 
-	
-	<header class="barra-menu header">
+	<header class="barra-menu header unselectable">
 		<nav>
-			<ul>
-				<li class="titulo"><a class="opcionNav" href="#inicio">INICIO</a></li>
-				<li class="titulo"><a class="opcionNav" href="#cursos">CURSOS</a></li>
-				<li class="titulo"><a class="opcionNav" href="#nosotros">NOSOTROS</a></li>
-				<li class="titulo"><a class="opcionNav" href="#testimonios">TESTIMONIOS</a></li>
-				<li class="titulo"><a class="opcionNav" href="#contacto">CONTACTO</a></li>
-				
+      <input onclick="mostrarMenu()" type="checkbox" id="toggle"/>
+      <label class="menu-icon" for="toggle"></label>
+			<ul id="listaMenu">
+				<li class="titulo" onclick="ocultarMenu()"><a class="opcionNav" href="#inicio">INICIO</a></li>
+				<li class="titulo" onclick="ocultarMenu()"><a class="opcionNav" href="#nosotros">NOSOTROS</a></li>
+				<li class="titulo" onclick="ocultarMenu()"><a class="opcionNav" href="#cursos">CURSOS</a></li>
+				<li class="titulo" onclick="ocultarMenu()"><a class="opcionNav" href="#testimonios">TESTIMONIOS</a></li>
+				<li class="titulo" onclick="ocultarMenu()"><a class="opcionNav" href="#contacto">CONTACTO</a></li>				
 			</ul>
 		</nav>
 	</header>
 	<main class="main" id="main">
-		<!-- <section>Sobre Nosotros</section> -->
+<!-- <section>Sobre Nosotros</section> -->
 		<section id="nosotros" class="child-container">
-			<h2><center>Nosotros</center></h2>
-			<div class="container-nosotros">
-				<div class="container-somos">
-					<h3>¿Quiénes somos?</h3>
-					<p>
-						DevZone es una plataforma de capacitación virtual, compromtetida a 
-						brindar educación de de alta calidad y romper las barreras geográficas 
-						del aprendizaje y adquisición de conocimientos.
-					</p>
-				</div>
-
-				<div class="img-somos">
-					<img src="https://drive.google.com/uc?id=1HR7a4RCBrZKZU7APkyOlG5ITlemqenUK" loading="lazy">
-				</div>
-
-				<div class="img-somos">
-					<img src="https://drive.google.com/uc?id=13DsfW76MPJbDWFh7qMKB58C8brY7khuF" loading="lazy">
-				</div>
-
-				<div class="container-elegirnos">
-					<br>
-					<h3>¿Por qué elegirnos?</h3>
-						<div class="elegirnos-grid">
-							<div>
-								<p>
-									Contamos con más de 50 cursos prácticos y/o teóricos, dictados por
-									personal calificado por un riguroso proceso de selección
-								</p>
+			<br><br>
+				<h2><center>Nosotros</center></h2>
+				<div class="container-nosotros">
+					<div class="container-somos">
+						<h3>¿Quiénes somos?</h3>
+						<p>
+							DevZone es una plataforma de capacitación virtual, compromtetida a 
+							brindar educación de de alta calidad y romper las barreras geográficas 
+							del aprendizaje y adquisición de conocimientos.
+						</p>
+					</div>
+	
+					<div class="img-somos">
+						<img src="https://drive.google.com/uc?id=1HR7a4RCBrZKZU7APkyOlG5ITlemqenUK" loading="lazy">
+					</div>
+	
+					<div class="img-somos">
+						<img src="https://drive.google.com/uc?id=13DsfW76MPJbDWFh7qMKB58C8brY7khuF" loading="lazy">
+					</div>
+	
+					<div class="container-elegirnos">
+						<h3>¿Por qué elegirnos?</h3>
+							<div class="elegirnos-grid">
+								<div>
+									<li>Tenemos gran variedad de cursos y profesores, seleccionados 
+										rigurosamente.</li>
+								</div>
+								<div>
+									<li>Ofrecemos diplomas de certificación físicos de las Escuelas 
+											aprobadas.</li>
+								</div>
+								<div>
+									<li>Transformamos la manera de enseñar.</li>
+								</div>
+								<div>
+									<li>Te ayudamos a expandir tus oportunidades laborales.</li>
+								</div>
+								</ul>
 							</div>
-							<div>
-								<p>
-									Nuestro contenido está siempre actualizado
-								</p>
-							</div>
-							<div>
-								<p>
-									Los mentores están siempre disponibles para guiarte y motivarte en
-									el camino al logro de tu nueva meta
-								</p>
-							</div>
-							<div>
-								<p>
-									Ponemos a tu alcance un foro en dónde los estudiantes como tú, 
-									discuten y resuelven sus dudas.
-								</p>
-							</div>
-						</div>
+					</div>
 				</div>
-			</div>
-			<div id="boton-verMas">
-				<button><a href="nosotros.html">Leer más</a></button>
-			</div>
-		</section>
-
+				<div id="boton-verMas">
+					<button><a href="nosotros.html">Leer más</a></button>
+				</div>
+			</section>
 		<!-- <section>Algunos de nuestros cursos</section> -->
+		
 		<section id="cursos" class="child-container">
-			<iframe src="Slider/prueba.html" style="border-style: none;width: 100%; height: 350px;" scrolling="no"></iframe>
-			<div id="boton-verMas">
-				<button><a href="cursos.html">Ver más</a></button>
-			</div>
-			<script src="js/carousel.js"></script>
-		</section>
+				<br>
+				<iframe src="Slider/prueba.html" style="border-style: none;width: 100%; height: 350px;" scrolling="no"></iframe>
+				<div id="boton-verMas">
+					<br>
+					<button><a href="cursos.html">Ver más</a></button>
+				</div>
+				<script src="js/carousel.js"></script>
+			</section>
 		<!-- <section>Categorias populares</section> -->
 		<section id="categorias" class="categorias child-container unselectable">
-			<h2>Categorías populares</h2>
+			<h2><center>Categorías populares</center></h2>
 			<div class="cards-categorias">
 				<a class="categoria">
 					<i class="ico-lifebuoy"></i>
 					<h3 class="title-card">Desarrollo web</h3>
-					<p class="text-card">3 cursos</p>
+					<p class="text-card">35 cursos</p>
 				</a>
 				<div class="categoria">
 					<i class="ico-books"></i>
-					<h3 class="title-card">Lectura</h3>
-					<p class="text-card">3 cursos</p>
+					<h3 class="title-card">Diseño gráfico</h3>
+					<p class="text-card">20 cursos</p>
 				</div>
 				<div class="categoria">
 					<i class="ico-coin-pound"></i>
 					<h3 class="title-card">Economía</h3>
-					<p class="text-card">3 cursos</p>
+					<p class="text-card">25 cursos</p>
 				</div>
 				<div class="categoria">
 					<i class="ico-camera"></i>
 					<h3 class="title-card">Fotografía</h3>
-					<p class="text-card">3 cursos</p>
+					<p class="text-card">13 cursos</p>
 				</div>
 			</div>
 			<div id="boton-verMas">
@@ -175,25 +171,25 @@
 					<ul>
 						<li>
 							<a href="https://www.facebook.com/profile" target="_blank">
-								<img src="https://drive.google.com/uc?id=11cSSmhhXOuMS4y7tkHQxppjxqcF0mX3L"  alt="Logo de Facebook" heigth="30rem" width="30rem" loading="lazy">Síguenos en Facebook
+								<i class="ico-facebook2"></i> Síguenos en Facebook
 							</a>
 						</li>
 
 						<li>
 							<a href="https://www.facebook.com/profile" target="_blank">
-								<img src="https://drive.google.com/uc?id=1er8bsgIV8tOqO3vnADJWO9SwULpOjk_y" alt="Logo de Twitter" heigth="27rem" width="27rem" loading="lazy">Síguenos en Twitter
-						</a>
-						</li>
-
-						<li>
-							<a href="https://www.facebook.com/profile" target="_blank">
-								<img src="https://drive.google.com/uc?id=1cFZRmCHmPCZ36VC7cmtR3O1TlCWaGVNX"  alt="Logo de Instagram" heigth="30rem" width="30rem" loading="lazy">Síguenos en Instagram
+								<i class="ico-twitter"></i> Síguenos en Twitter
 							</a>
 						</li>
 
 						<li>
 							<a href="https://www.facebook.com/profile" target="_blank">
-								<img src="https://drive.google.com/uc?id=1nwl8u5X3zhwrn8UXLhiQAORDOV7vbcAZ" alt="Logo de Twitch" heigth="30rem" width="30rem" loading="lazy">Síguenos en Twitch
+								<i class="ico-instagram"></i> Síguenos en Instagram
+							</a>
+						</li>
+
+						<li>
+							<a href="https://www.facebook.com/profile" target="_blank">
+								<i class="ico-youtube"></i> Síguenos en Youtube
 							</a>
 						</li>
 					</ul>
