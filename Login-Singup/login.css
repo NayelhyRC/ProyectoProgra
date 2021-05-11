@@ -32,7 +32,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: white;
+  color: var(--bg-color-secundario);
   transition: 0.5s;
 }
 ::placeholder {
@@ -92,7 +92,7 @@ a:hover {
 }
 .datos hr {
   background-color: var(--bg-color-principal);
-  margin: auto;
+  margin-top: 1px;
   height: 1px;
   border: 0px;
 }
