@@ -7,13 +7,14 @@
   --sombra-color: rgba(20, 191, 152, 0.4) 5px 5px,
     rgba(20, 191, 152, 0.3) 10px 10px, rgba(20, 191, 152, 0.2) 15px 15px;
 }
-.Modal-Login {
+.Modal-Login,
+.Modal-Singup {
   position: fixed;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 100vh;
-  z-index: 101;
+  z-index: 2;
   background: rgba(0, 0, 0, 0.5);
   display: none;
 }
@@ -28,7 +29,23 @@
   height: 350px;
   background: #f5f5f5;
   border-radius: 25px;
-  z-index: 102;
+  z-index: 3;
+  opacity: 0;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2);
+  transition: transform 1000ms ease-in-out, opacity 300ms ease-in-out;
+}
+.contenedor-Singup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.5);
+  width: 270px;
+  height: 390px;
+  background: #f5f5f5;
+  border-radius: 25px;
+  z-index: 3;
   opacity: 0;
   box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2);
   transition: transform 1000ms ease-in-out, opacity 300ms ease-in-out;
@@ -41,7 +58,16 @@ body.showLoginForm .contenedor-Login {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
 }
-.contenedor-Login .cerrar {
+body.showSingupForm .Modal-Singup {
+  display: block;
+}
+body.showSingupForm .contenedor-Singup {
+  top: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+/*.contenedor-Login */
+.cerrar {
   position: absolute;
   top: -10px;
   right: -10px;
@@ -124,9 +150,23 @@ body.showLoginForm .contenedor-Login {
 .contenedor-Login a:hover {
   color: var(--bg-color-secundario);
 }
+.contenedor-Singup p {
+  height: 50px;
+}
+.contenedor-Singup a {
+  font-weight: bold;
+  color: var(--bg-color-principal);
+}
+.contenedor-Singup a:hover {
+  color: var(--bg-color-secundario);
+}
 @media (width: 1024px) {
   .contenedor-Login {
     transform: translate(-50%, -50%) scale(2) !important;
+  }
+  .contenedor-Singup {
+    height: 450px;
+    transform: translate(-50%, -50%) scale(1.7) !important;
   }
   .namePage {
     height: 5vh;
@@ -136,7 +176,8 @@ body.showLoginForm .contenedor-Login {
   }
 }
 @media (width: 768px) {
-  .contenedor-Login {
+  .contenedor-Login,
+  .contenedor-Singup {
     transform: translate(-50%, -50%) scale(1.5) !important;
   }
   .namePage {
@@ -147,7 +188,8 @@ body.showLoginForm .contenedor-Login {
   }
 }
 @media (min-width: 1400px) {
-  .contenedor-Login {
+  .contenedor-Login,
+  .contenedor-Singups {
     transform: translate(-50%, -50%) scale(1.5) !important;
     height: 350px;
   }

@@ -60,6 +60,7 @@
 				<li class="titulo"><a class="opcionNav" href="#testimonios"><i class="ico-users"></i><span> TESTIMONIOS</span></a></li>
 				<li class="titulo"><a class="opcionNav" href="#contacto"><i class="ico-hangouts"></i><span> CONTACTO</span></a></li>
 				<li class="titulo"><a class="opcionNav" onclick="openLoginForm()">INCIAR SESION</a></li>			
+				<li class="titulo"><a class="opcionNav" onclick="openSingupForm()">REGISTRARSE</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -86,6 +87,30 @@
 	</div>
 </div>
 <!--cierre-->
+<!--Singup Modal-->
+<div class="Modal-Singup">
+	<div class="contenedor-Singup">
+	  
+		<div class="cerrar" onclick="closeSingupForm()">×</div>
+		<div class="namePage">
+		<h1><strong>DEVZONEEE</strong></h1>
+	  </div>
+		<div class="datos">
+		  <input type="text" placeholder="Username" required ><br ><br >
+		  <hr >
+		  <input type="email" placeholder="Example@mail.com" required ><br ><br >
+		  <hr >
+		  <input type="password" placeholder="Password" required><br ><br >
+		  <hr >
+		  <input type="password" placeholder="Confirm Password" required><br ><br ><hr >
+		</div>
+		  <div class="opc">
+			<input type="submit" name="Singup" value="REGISTRARSE" >
+		  </div>
+				<p>¿Ya tienes una cuenta?<a href="#">Inicia Sesion</a></p>
+	  	</div>
+</div>
+<!--cerrar2-->
 	<main class="main" id="main">
 <!-- <section>Sobre Nosotros</section> -->
 		<section id="nosotros" class="child-container">
