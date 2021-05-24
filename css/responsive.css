@@ -47,15 +47,17 @@
   .barra-menu nav {
     background: #113448;
   }
+  /*
   .barra-menu ul {
     display: none;
     height: 0px;
     overflow: hidden;
-  }
+  }*/
   .barra-menu ul li {
     padding: 1em 0;
     line-height: 2em;
   }
+  /*
   .barra-menu .menu-icon {
     display: block;
     padding: 0.1em 0.3em;
@@ -72,7 +74,7 @@
     display: initial;
   }
   /* este despliega el menú xddx */
-  #toggle:checked ~ ul > li {
+  /*#toggle:checked ~ ul > li {
     background: #113448;
   }
 
@@ -80,6 +82,25 @@
     display: none;
     height: 0px;
     overflow: hidden;
+  }*/
+  .opcionNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .opcionNav > span {
+    font-size: 0.7em;
+  }
+  .opcionNav > i {
+    font-size: 1.5em;
+  }
+  .opcionNav:hover {
+    padding: 0;
+    font-size: 1em;
+    font-weight: initial;
+    border: none;
+    border-radius: 0px;
+    color: var(--bg-color-secundario);
   }
 }
 
