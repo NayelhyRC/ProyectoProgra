@@ -125,13 +125,25 @@
   .contenedor-inicio::after {
     max-height: 30vh;
   }
+
+  .elegirnos-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 /* media query para elegirnos-grid (index.html) y nosotros.html  */
 @media (max-width: 600px) {
-  .elegirnos-grid {
-    display: flex;
-    flex-wrap: wrap;
+  .container-nosotros {
+    width: 98%;
+  }
+
+  .container-somos {
+    width: 80%;
+  }
+
+  .container-elegirnos {
+    width: 80%;
   }
 
   .mision,
