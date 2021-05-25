@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "LSicons";
+  src: url("fonts/LSicons.eot?rdyzys");
+  src: url("fonts/LSicons.eot?rdyzys#iefix") format("embedded-opentype"),
+    url("fonts/LSicons.ttf?rdyzys") format("truetype"),
+    url("fonts/LSicons.woff?rdyzys") format("woff"),
+    url("fonts/LSicons.svg?rdyzys#LSicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "LSicons" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-key:before {
+  content: "\e903";
+}
+.icon-sign-in:before {
+  content: "\e902";
+}
