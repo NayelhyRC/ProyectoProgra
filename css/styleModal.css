@@ -24,7 +24,7 @@
   align-items: center;
   position: absolute;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1.5);
+  transform: translate(-50%, -50%);
   width: 260px;
   height: 350px;
   background: #f5f5f5;
@@ -40,9 +40,9 @@
   align-items: center;
   position: absolute;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1.5);
+  transform: translate(-50%, -50%);
   width: 270px;
-  height: 390px;
+  height: 380px;
   background: #f5f5f5;
   border-radius: 25px;
   z-index: 3;
@@ -88,7 +88,7 @@ body.showSingupForm .contenedor-Singup {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: white;
-  height: 10vh;
+  height: 60px;
   background-color: var(--bg-color-principal);
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
@@ -97,10 +97,16 @@ body.showSingupForm .contenedor-Singup {
   line-height: 12px;
 }
 /*DATOS*/
-.datos {
+.contenedor-Singup .datos {
+  font-family: "Courier New", Courier, monospace;
+  width: 60%;
+  height: 200px;
+}
+.contenedor-Login .datos {
   font-family: "Courier New", Courier, monospace;
   margin-top: 15px;
   width: 60%;
+  height: 45%;
 }
 .datos input {
   outline: none;
@@ -124,7 +130,7 @@ body.showSingupForm .contenedor-Singup {
 .opc {
   display: flex;
   margin-top: 4%;
-  height: 10vh;
+  height: 70px;
 }
 .opc input {
   background-color: var(--bg-color-principal);
@@ -151,7 +157,7 @@ body.showSingupForm .contenedor-Singup {
   color: var(--bg-color-secundario);
 }
 .contenedor-Singup p {
-  width: 100px;
+  width: 80%;
   height: 50px;
 }
 .contenedor-Singup a {
@@ -163,35 +169,30 @@ body.showSingupForm .contenedor-Singup {
 }
 @media (width: 1024px) {
   .contenedor-Login {
-    transform: translate(-50%, -50%) scale(2) !important;
+    transform: translate(-50%, -50%) scale(0.9) !important;
   }
   .contenedor-Singup {
     height: 450px;
-    transform: translate(-50%, -50%) scale(1.7) !important;
-  }
-  .namePage {
-    height: 5vh;
+    transform: translate(-50%, -50%) scale(0.9) !important;
   }
   .contenedor-Login p {
     margin-top: -40px !important;
   }
 }
 @media (width: 768px) {
-  .contenedor-Login,
-  .contenedor-Singup {
+  .contenedor-Login {
     transform: translate(-50%, -50%) scale(1.5) !important;
-  }
-  .namePage {
-    height: 7vh;
   }
   .opc {
     height: 7vh;
   }
 }
 @media (min-width: 1400px) {
-  .contenedor-Login,
-  .contenedor-Singups {
-    transform: translate(-50%, -50%) scale(1.5) !important;
+  .contenedor-Login {
+    transform: translate(-50%, -50%) scale(1) !important;
     height: 350px;
+  }
+  .contenedor-Singup {
+    height: 390px;
   }
 }
