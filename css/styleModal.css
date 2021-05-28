@@ -7,6 +7,7 @@
   --sombra-color: rgba(20, 191, 152, 0.4) 5px 5px,
     rgba(20, 191, 152, 0.3) 10px 10px, rgba(20, 191, 152, 0.2) 15px 15px;
 }
+
 .Modal-Login,
 .Modal-Singup {
   position: fixed;
@@ -48,6 +49,7 @@
   border-radius: 25px;
   z-index: 3;
   opacity: 0;
+  text-align: center;
   box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2);
   transition: transform 1000ms ease-in-out, opacity 300ms ease-in-out;
 }
@@ -100,6 +102,7 @@ body.showSingupForm .contenedor-Singup {
 /*DATOS*/
 .contenedor-Singup .datos {
   font-family: "Courier New", Courier, monospace;
+  text-align: center;
   width: 60%;
   height: 200px;
 }
@@ -109,6 +112,7 @@ body.showSingupForm .contenedor-Singup {
   width: 60%;
   height: 45%;
 }
+
 .datos input {
   outline: none;
   border: 0px;
