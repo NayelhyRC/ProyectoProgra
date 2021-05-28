@@ -1,41 +1,29 @@
-$border : 0px;
-$transition : 0.8s;
-$color :white;
-.datos input {
-    outline: none;
-    border: $border;
-    border-bottom: 1px;
-    background-color: rgba(0, 255, 255, 0);
-    margin-top: 30px;
-    width: 100%;
+@import "_Mixin";
+
+.contenedor-Login {
+    @include ContainerGeneric;
+    width: 260px;
+    height: 350px;
   }
-.datos input::placeholder {
-    color: #9b9ea7;
+body.showLoginForm .Modal-Login {
+    display: block;
+  }
+body.showLoginForm .contenedor-Login {
+    @include containerShow;    
 }
-.datos hr {
-    position: relative;
-    background-color: var(--bg-color-principal);
-    margin-top: -15px;
-    height: 1px;
-    border: $border;
-}
-/*OPC*/
-.opc {
-    display: flex;
-    margin-top: 4%;
-    height: 70px;
-}
-.opc input {
-    background-color: var(--bg-color-principal);
-    color:$color;
-    width: 200px;
-    height: 40px;
-    border: $border;
-    border-radius: 20em;
-    margin: auto;
-}
-.opc input:hover {
-    transition: $transition;
-    color:$color;
-    background-color: var(--bg-color-secundario);
-}
+.contenedor-Login .datos {
+    font-family: "Courier New", Courier, monospace;
+    margin-top: 15px;
+    width: 60%;
+    height: 45%;
+  }
+.contenedor-Login p {
+    height: 50px;
+  }
+  .contenedor-Login a {
+    font-weight: bold;
+    color: var(--bg-color-principal);
+  }
+  .contenedor-Login a:hover {
+    color: var(--bg-color-secundario);
+  }

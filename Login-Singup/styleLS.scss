@@ -1,16 +1,8 @@
-$bg-color-pantalla-inicio: rgba(17, 52, 72, 0.6);
-$bg-color-principal: rgb(17, 52, 72);
-$bg-color-secundario: #14bf98;
-$transparente : rgba(0, 0, 0, 0.5);
-$index : 102;
-
-.Modal {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100vh;
-    z-index: $index;
-    background: $transparente;
-    display: none;
+@import "_Login";
+@import "_Singup";
+@import "_GenericStyles";
+@import "_Media";
+@import "_Mixin";
+.Modal-Login,.Modal-Singup{
+    @include Modal;
 }

@@ -1,0 +1,123 @@
+$bg-color-pantalla-inicio: rgba(17, 52, 72, 0.6);
+$bg-color-principal: rgb(17, 52, 72);
+$bg-color-secundario: #14bf98;
+
+$border : 0px;
+$transition : 0.8s;
+$color :white;
+.datos input {
+    outline: none;
+    border: $border;
+    border-bottom: 1px;
+    background-color: rgba(0, 255, 255, 0);
+    margin-top: 30px;
+    width: 100%;
+  }
+.datos input::placeholder {
+    color: #9b9ea7;
+}
+.datos hr {
+    position: relative;
+    background-color: var(--bg-color-principal);
+    margin-top: -15px;
+    height: 1px;
+    border: $border;
+}
+/*OPC*/
+.opc {
+    display: flex;
+    margin-top: 4%;
+    height: 70px;
+}
+.opc input {
+    background-color: var(--bg-color-principal);
+    color:$color;
+    width: 200px;
+    height: 40px;
+    border: $border;
+    border-radius: 20em;
+    margin: auto;
+}
+.opc input:hover {
+    transition: $transition;
+    color:$color;
+    background-color: var(--bg-color-secundario);
+}
+//
+.cerrar {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 40px;
+    height: 40px;
+    background: #555;
+    color: #f5f5f5;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .namePage {
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    height: 80px;
+    background-color:$bg-color-principal;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  .namePage h1 {
+    line-height: 12px;
+  }
+  /*DATOS*/
+  .contenedor-Singup .datos {
+    font-family: "Courier New", Courier, monospace;
+    width: 60%;
+    height: 200px;
+  }
+  .contenedor-Login .datos {
+    font-family: "Courier New", Courier, monospace;
+    margin-top: 15px;
+    width: 60%;
+    height: 45%;
+  }
+  .datos input {
+    outline: none;
+    border: 0px;
+    border-bottom: 1px;
+    background-color: rgba(0, 255, 255, 0);
+    margin-top: 30px;
+    width: 100%;
+  }
+  .datos input::placeholder {
+    color: #9b9ea7;
+  }
+  .datos hr {
+    position: relative;
+    background-color: var(--bg-color-principal);
+    margin-top: -15px;
+    height: 1px;
+    border: 0px;
+  }
+  /*OPC*/
+  .opc {
+    display: flex;
+    margin-top: 4%;
+    height: 70px;
+  }
+  .opc input {
+    background-color: var(--bg-color-principal);
+    color: white;
+    width: 200px;
+    height: 40px;
+    border: 0px;
+    border-radius: 20em;
+    margin: auto;
+  }
+  .opc input:hover {
+    transition: 0.7s;
+    color: white;
+    background-color: var(--bg-color-secundario);
+  }
