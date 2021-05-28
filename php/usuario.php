@@ -18,5 +18,5 @@
         echo "falta";
     }
     
-    echo "<a href='../frmUsuario.html'>Regresar</a>"
+    header("location: ../index.html");
 ?>

@@ -98,25 +98,29 @@
 			<h1><strong>DEVZONE</strong></h1>
 		</div>
 
-		<div class="datos">
-			<input type="text" placeholder="Usuario" required ><br ><br >
-			<hr >
-			<input type="email" placeholder="Ejemplo@mail.com" required ><br ><br >
-			<hr >
-			<input type="password" placeholder="Contraseña" required><br ><br >
-			<hr >
-			<input type="password" placeholder="Confirmar contraseña" required><br><br><hr >
-		</div>
+		<form class="registrar" method="POST" action="php/usuario.php">
+			<div class="datos">
+				<input type="text" placeholder="Usuario" required name="txtUsuario"><br><br>
+				<hr>
+				<input type="email" placeholder="Ejemplo@mail.com" required name="txtCorreo"><br><br>
+				<hr>
+				<input type="password" placeholder="Contraseña" required name="txtContraseña"><br><br>
+				<hr>
+				<input type="password" placeholder="Confirmar contraseña" required name="txtConfirmacionContraseña">
+				<br><br><hr >
+			</div>
 
-		<div class="opc">
-			<input type="submit" name="Singup" value="REGISTRARSE">
-		</div>
+			<div class="opc">
+				<input type="submit" name="Singup" value="REGISTRARSE">
+			</div>
+		
 			<p>
 				¿Ya tienes una cuenta?
 				<a href="#">
-					<center>Inicia Sesion</center>
+					<center>Inicia Sesión</center>
 				</a>
 			</p>
+		</form>
 		</div>
 	</div>
 <!--cerrar2-->
