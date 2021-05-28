@@ -1,0 +1,39 @@
+//Cambios generales
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Candara, Verdana, sans-serif;
+}
+.container {
+    max-width: 1240px;
+    margin: auto;
+}
+.unselectable {
+    user-select: none;
+}
+.cuerpo {
+    height: 150vh;
+    min-width: 100%;
+}
+@media (max-width: 768px){
+    body{
+        font-size: 14px;
+    }
+  }
+  @media (max-width: 480px){
+    body{
+        font-size: 12px;
+    }
+  }
+  @media (max-width: 320px){
+    body{
+        font-size: 9px;
+    }
+  }
+//Fin cambios
+@import "panelSlider";
+@import "navMenu";
+@import "btnLink";
+@import "nosotrosSection";
+@import "footer";

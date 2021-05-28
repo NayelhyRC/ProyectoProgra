@@ -1,0 +1,42 @@
+$bg-color-pantalla-inicio: rgba(17, 52, 72, 0.6);
+$bg-color-principal: rgb(17, 52, 72);
+$bg-color-secundario: #14bf98;
+$radio-borde-div: 20px;
+$margin-div-img: 1.3rem;
+$sombra-color: rgba(20, 191, 152, 0.4) 5px 5px,
+    rgba(20, 191, 152, 0.3) 10px 10px, rgba(20, 191, 152, 0.2) 15px 15px;
+$btn-color-hover: #6A808D;
+
+.menu-navegacion{
+    background: $bg-color-principal;
+    padding: 1em 0;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            flex-grow: 6;
+        }
+    }
+}
+
+// Ejemplo de nav 
+// <section class="menu-navegacion">
+//     <nav>
+//         <ul>
+//             <li><a href="" class="btn-link-menu"><i class="ico-home3"></i><span>Inicio</span></a></li>
+//             <li><a href="" class="btn-link-menu"><i class="ico-home3"></i><span>Nosotros</span></a></li>
+//             <li><a href="" class="btn-link-menu"><i class="ico-home3"></i><span>Cursos</span></a></li>
+//             <li><a href="" class="btn-link-menu"><i class="ico-home3"></i><span>Testimonios</span></a></li>
+//             <li><a href="" class="btn-link-menu"><i class="ico-home3"></i><span>Contacto</span></a></li>
+//         </ul>
+//     </nav> 
+// </section>

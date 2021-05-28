@@ -1,0 +1,124 @@
+$bg-color-pantalla-inicio: rgba(17, 52, 72, 0.6);
+$bg-color-principal: rgb(17, 52, 72);
+$bg-color-secundario: #14bf98;
+$radio-borde-div: 20px;
+$margin-div-img: 1.3rem;
+$sombra-color: rgba(20, 191, 152, 0.4) 5px 5px,
+    rgba(20, 191, 152, 0.3) 10px 10px, rgba(20, 191, 152, 0.2) 15px 15px;
+$btn-color-hover: #6A808D;
+
+.panel {
+    height: calc(100vh - 4.5em);
+    overflow: hidden;
+    color: #fff;
+    font-weight: bold;
+    &-contenedor {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        &::after{
+            content: "";
+            background: $bg-color-pantalla-inicio;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+        }
+        // Slider del panel
+        &-slider {
+            width: 100%;
+            overflow: hidden;
+            &-contenedor {
+                width: 100%;
+                display: flex;
+                &-item {
+                    width: 100vw;
+                    height: 100vh;
+                    display: flex;
+                    flex-shrink: 0;
+                    object-fit: cover;
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+        // Texto del panel
+        &-text {
+            position: absolute;
+            width: 50%;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &-title {
+                font-size: 4em;
+                text-transform: uppercase;
+                text-align: center;
+            }
+            &-subtitle {
+                margin: 1em 0;
+                font-size: 1.5em;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .panel {
+        &-contenedor {
+            // Texto del panel
+            &-text {
+                min-width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 768px) and (orientation: portrait) {
+    .panel {
+        max-height: 40vh;
+    }
+}
+@media (max-width: 480px) and (orientation: portrait) {
+    .panel {
+        max-height: 30vh;
+    }
+}
+
+// Ejemplo de Panel Slider
+// <section class="panel unselectable" id="inicio">
+//     <div class="panel-contenedor">
+//         <div class="panel-contenedor-slider">
+//             <div class="panel-contenedor-slider-contenedor">
+//                 <div class="panel-contenedor-slider-contenedor-item">
+//                     <img src="https://drive.google.com/uc?id=1UcwkHMCDU2kXPbIV8Xne1Cea_NZbknBH" alt="">
+//                 </div>
+//                 <div class="panel-contenedor-slider-contenedor-item">
+//                     <img src="https://drive.google.com/uc?id=1YfWkyVlD9dnuubWQR5A9DnR_6n_13TXB" alt="">
+//                 </div>
+//                 <div class="panel-contenedor-slider-contenedor-item">
+//                     <img src="https://drive.google.com/uc?id=1hbTH0JV8uj7FdsZaQk9rbVq7pHu1uOkM" alt="">
+//                 </div>
+//                 <div class="panel-contenedor-slider-contenedor-item">
+//                     <img src="https://drive.google.com/uc?id=176UU3stIE1PNRi1v3UVVxfu_E6Fw7C9C" alt="">
+//                 </div>
+//                 <div class="panel-contenedor-slider-contenedor-item">
+//                     <img src="https://drive.google.com/uc?id=1aRcl5tKHsYFVZoSON1MVfWHtwKeACREg" alt="">
+//                 </div>
+//                 <div class="panel-contenedor-slider-contenedor-item">
+//                     <img src="https://drive.google.com/uc?id=1UcwkHMCDU2kXPbIV8Xne1Cea_NZbknBH" alt="">
+//                 </div>
+//             </div>
+//             <script src="../js/panelSlider.js"></script>
+//         </div>
+//         <div class="panel-contenedor-text">
+//             <p class="panel-contenedor-text-title">DEVZONE</p>
+//             <p class="panel-contenedor-text-subtitle">La educación es más accesible que nunca</p>
+//             <a href="" class="btn-link-panel"><span>Empezar</span></a>
+//         </div>
+//     </div>
+// </section>

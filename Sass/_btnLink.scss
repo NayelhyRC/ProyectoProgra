@@ -1,0 +1,134 @@
+$bg-color-pantalla-inicio: rgba(17, 52, 72, 0.6);
+$bg-color-principal: rgb(17, 52, 72);
+$bg-color-secundario: #14bf98;
+$radio-borde-div: 20px;
+$margin-div-img: 1.3rem;
+$sombra-color: rgba(20, 191, 152, 0.4) 5px 5px,
+    rgba(20, 191, 152, 0.3) 10px 10px, rgba(20, 191, 152, 0.2) 15px 15px;
+$btn-color-hover: #6A808D;
+
+@mixin btn-link {
+    color: white;
+    display: inline-block;
+    padding: 0 1.3em;
+    line-height: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+.btn-link {
+    @include btn-link();
+    background-color: $bg-color-secundario;
+    border-radius: 5px;
+    margin: 0.3em auto;
+    &:hover {
+        background-color: $btn-color-hover;
+    }
+    &-menu {
+        @include btn-link();
+        background-color: $bg-color-principal;
+        &:hover {
+            color: $bg-color-secundario;
+        }
+        i{
+            margin: 0 0.3em;
+        }
+    }
+    &-panel {
+        @include btn-link();
+        border: 1px solid #fff;
+        margin: auto;
+        font-size: 1.2em;
+        &:hover {
+            background: $bg-color-principal;
+        }
+    }
+    &-logo {
+        @include btn-link();
+        color: #fff;
+        border-right: #fff 1px solid;
+        border-bottom: #fff 1px solid;
+        border-radius: 20px;
+        font-size: 1.5em;
+        margin: 0.3em auto;
+        flex-grow: 2;
+        &:hover {
+            color: $bg-color-secundario;
+            border-color: $bg-color-secundario;
+        }
+    }
+    &-sesion {
+        @include btn-link();
+        padding: 0.5em 1em;
+        color: #fff;
+        border: #fff 1px solid;
+        border-radius: 20px;
+        font-size: 0.9em;
+        &:hover {
+            color: $bg-color-secundario;
+            border-color: $bg-color-secundario;
+        }
+    }
+  }
+  @media (max-width: 870px) {
+    .btn-link {        
+        &-logo {
+            border: none;
+            padding: 0 1em;
+            span {
+                display: none;font-size: 0.7em;
+            }
+            i{
+                font-size: 1.5em;
+                margin: 0 auto;
+                margin-bottom: 0.2em;
+            }
+        }
+    }
+}
+
+  @media (max-width: 768px){
+    .btn-link {
+        &-menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            span {
+                font-size: 0.7em;
+            }
+            i{
+                font-size: 1.4em;
+                margin: 0 auto;
+                margin-bottom: 0.2em;
+            }
+        }
+        &-sesion {
+            border: none;
+            padding: 0 0.3;
+            span {
+                font-size: 0.6em;
+            }
+            i{
+                font-size: 1.4em;
+                margin: 0 auto;
+                margin-bottom: 0.2em;
+            }
+        }
+      }
+  }
+
+  @media (max-width: 320px){
+    .btn-link {
+        &-menu {
+            span {
+                display: none;
+            }
+        }
+    }
+}
+
+// Ejemplo de btn-link
+//   <a href="" class="btn-link">Hola como estas</a>
+//   <a href="" class="btn-link-menu">Hola como estas</a>

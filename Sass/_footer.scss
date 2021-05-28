@@ -1,0 +1,69 @@
+$bg-color-pantalla-inicio: rgba(17, 52, 72, 0.6);
+$bg-color-principal: rgb(17, 52, 72);
+$bg-color-secundario: #14bf98;
+$radio-borde-div: 20px;
+$margin-div-img: 1.3rem;
+$sombra-color: rgba(20, 191, 152, 0.4) 5px 5px,
+    rgba(20, 191, 152, 0.3) 10px 10px, rgba(20, 191, 152, 0.2) 15px 15px;
+$btn-color-hover: #6A808D;
+
+footer .contenedor {
+    background: $bg-color-principal;
+    padding: 3em;
+    color: #fff;
+    .informacion {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &-item {
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+            h2 {
+                margin: 1em 0;
+            }
+            margin: 0 3em;
+            &.nosotros {
+                flex-grow: 2;
+            }
+            &.redes-sociales {
+                flex-grow: 1;
+                li {
+                    list-style: none;
+                    margin: 1em 0.5em;
+                }
+            }
+            &.contacto {
+                flex-grow: 1;
+            }
+        }
+    }
+}
+.copyrigth {
+    background: $bg-color-secundario;
+    p {
+        text-align: center;
+        padding: 1em;
+        color: $bg-color-principal;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 768px) {
+    footer .contenedor {
+        padding: 2em;
+        .informacion {
+            flex-direction: column;
+            &-item {
+                flex-grow: 1;
+                border-bottom: solid 2px $bg-color-secundario;
+                margin: 0.5em 0;
+                padding: 1em 0;
+                &.contacto {
+                    border: none;
+                }
+            }
+        }
+    }
+}
