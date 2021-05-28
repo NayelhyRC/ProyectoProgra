@@ -1,0 +1,41 @@
+$border : 0px;
+$transition : 0.8s;
+$color :white;
+.datos input {
+    outline: none;
+    border: $border;
+    border-bottom: 1px;
+    background-color: rgba(0, 255, 255, 0);
+    margin-top: 30px;
+    width: 100%;
+  }
+.datos input::placeholder {
+    color: #9b9ea7;
+}
+.datos hr {
+    position: relative;
+    background-color: var(--bg-color-principal);
+    margin-top: -15px;
+    height: 1px;
+    border: $border;
+}
+/*OPC*/
+.opc {
+    display: flex;
+    margin-top: 4%;
+    height: 70px;
+}
+.opc input {
+    background-color: var(--bg-color-principal);
+    color:$color;
+    width: 200px;
+    height: 40px;
+    border: $border;
+    border-radius: 20em;
+    margin: auto;
+}
+.opc input:hover {
+    transition: $transition;
+    color:$color;
+    background-color: var(--bg-color-secundario);
+}
