@@ -1,0 +1,30 @@
+@media (width: 1024px) {
+    .contenedor-Login {
+      transform: translate(-50%, -50%) scale(0.9) !important;
+    }
+    .contenedor-Singup {
+      height: 450px;
+      transform: translate(-50%, -50%) scale(0.9) !important;
+    }
+    .contenedor-Login p {
+      margin-top: -40px !important;
+    }
+  }
+  @media (width: 768px) {
+    .contenedor-Login {
+      transform: translate(-50%, -50%) scale(1.5) !important;
+    }
+    .opc {
+      height: 7vh;
+    }
+  }
+  @media (min-width: 1400px) {
+    .contenedor-Login {
+      transform: translate(-50%, -50%) scale(1) !important;
+      height: 350px;
+    }
+    .contenedor-Singup {
+      height: 390px;
+    }
+  }
+  

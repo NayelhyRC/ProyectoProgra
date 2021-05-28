@@ -89,7 +89,7 @@ body.showSingupForm .contenedor-Singup {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: white;
-  height: 60px;
+  height: 80px;
   background-color: var(--bg-color-principal);
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;

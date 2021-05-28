@@ -1,0 +1,28 @@
+@import "_Mixin";
+.contenedor-Singup {
+    @include ContainerGeneric;
+    width: 270px;
+    height: 410px;
+}
+body.showSingupForm .Modal-Singup {
+    display: block;
+}
+body.showSingupForm .contenedor-Singup {
+    @include containerShow;
+}
+.contenedor-Singup .datos {
+    width: 60%;
+    height: 200px;
+  }
+
+.contenedor-Singup p {
+    width: 80%;
+    height: 50px;
+  }
+  .contenedor-Singup a {
+    font-weight: bold;
+    color: var(--bg-color-principal);
+  }
+  .contenedor-Singup a:hover {
+    color: var(--bg-color-secundario);
+  }

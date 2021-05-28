@@ -1,0 +1,29 @@
+@import "_Mixin";
+
+.contenedor-Login {
+    @include ContainerGeneric;
+    width: 260px;
+    height: 350px;
+  }
+body.showLoginForm .Modal-Login {
+    display: block;
+  }
+body.showLoginForm .contenedor-Login {
+    @include containerShow;    
+}
+.contenedor-Login .datos {
+    font-family: "Courier New", Courier, monospace;
+    margin-top: 15px;
+    width: 60%;
+    height: 45%;
+  }
+.contenedor-Login p {
+    height: 50px;
+  }
+  .contenedor-Login a {
+    font-weight: bold;
+    color: var(--bg-color-principal);
+  }
+  .contenedor-Login a:hover {
+    color: var(--bg-color-secundario);
+  }

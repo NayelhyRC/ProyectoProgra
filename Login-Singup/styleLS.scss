@@ -1,0 +1,8 @@
+@import "_Login";
+@import "_Singup";
+@import "_GenericStyles";
+@import "_Media";
+@import "_Mixin";
+.Modal-Login,.Modal-Singup{
+    @include Modal;
+}
