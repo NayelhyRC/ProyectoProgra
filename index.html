@@ -21,28 +21,27 @@
 					<p class="titulo subtitulo">La educación es más accesible que nunca</p>
 					<a class="titulo boton" href="#nosotros">Empezar<br></a>
 				</div>
-				
-
+	
 			<!--SLIDER INICIO-->
 				<div class="contenedor">
 					<div class="slider-contenedor">
 						<section class="contenido-slider">
-							<img src="https://drive.google.com/uc?id=1UcwkHMCDU2kXPbIV8Xne1Cea_NZbknBH" alt="" class="">
+							<img src="imagenes/fondo_principal.jpg" alt="" class="">
 						</section>
 						<section class="contenido-slider">
-							<img src="https://drive.google.com/uc?id=1YfWkyVlD9dnuubWQR5A9DnR_6n_13TXB" alt="" class="">
+							<img src="imagenes/codigo_colores.jpg" alt="" class="">
 						</section>
 						<section class="contenido-slider">
-							<img src="https://drive.google.com/uc?id=1hbTH0JV8uj7FdsZaQk9rbVq7pHu1uOkM" alt="" class="">
+							<img src="imagenes/boy-table.jpg" alt="" class="">
 						</section>
 						<section class="contenido-slider">
-							<img src="https://drive.google.com/uc?id=176UU3stIE1PNRi1v3UVVxfu_E6Fw7C9C" alt="" class="">
+							<img src="imagenes/integrales.jpg" alt="" class="">
 						</section>
 						<section class="contenido-slider">
-							<img src="https://drive.google.com/uc?id=1aRcl5tKHsYFVZoSON1MVfWHtwKeACREg" alt="" class="">
+							<img src="imagenes/mapa_pines.jpg" alt="" class="">
 						</section>
 						<section class="contenido-slider">
-							<img src="https://drive.google.com/uc?id=1UcwkHMCDU2kXPbIV8Xne1Cea_NZbknBH" alt="" class="">
+							<img src="imagenes/tubos_ensayo.jpg" alt="" class="">
 						</section>
 					</div>
 					<script src="js/sliderInicio.js"></script>
@@ -52,8 +51,8 @@
 	</section>
 	<header class="barra-menu header unselectable">
 		<nav>
-      <input type="checkbox" id="toggle"/>
-      <label class="menu-icon" for="toggle"></label>
+			<input type="checkbox" id="toggle"/>
+			<label class="menu-icon" for="toggle"></label>
 			<ul id="listaMenu">
 				<li class="titulo"><a class="opcionNav" href="#inicio"><i class="ico-home3"></i><span> INICIO</span></a></li>
 				<li class="titulo"><a class="opcionNav" href="#nosotros"><i class="ico-user-tie"></i><span> NOSOTROS</span></a></li>
@@ -65,52 +64,61 @@
 			</ul>
 		</nav>
 	</header>
-<script src="js/Modal.js"></script>
-<!--login modal-->
-<div class="Modal-Login" > 
-	<div class="contenedor-Login">
-		<div class="cerrar" onclick="closeLoginForm()">×</div>
-		  <div class="namePage"><h1><strong>DEVZONEEE</strong></h1></div>
-			<div class="datos">
-			  <input type="text" placeholder="Username" requiered><br><br>
-			  <hr>
-			  <input type="password" placeholder="Password" requiered ><br><br>
-			  <hr>
-			</div>
-			<div class="opc">
-			  <input type="submit" name="Login" value="INICIAR" />
-			</div>
-			<p>
-			  ¿Aun no creas tu cuenta?<a href="#">
-				REGISTRATE
-			  </a>
-			</p>	
+
+	<script src="js/Modal.js"></script>
+	<!--login modal-->
+	<div class="Modal-Login" > 
+		<div class="contenedor-Login">
+			<div class="cerrar" onclick="closeLoginForm()">×</div>
+			<div class="namePage"><h1><strong>DEVZONE</strong></h1></div>
+				<div class="datos">
+					<input type="text" placeholder="Usuario" requiered><br><br>
+					<hr>
+					<input type="password" placeholder="Contraseña" requiered ><br><br>
+					<hr>
+				</div>
+
+				<div class="opc">
+					<input type="submit" name="Login" value="INICIAR" />
+				</div>
+				<p>
+					¿Aún no creas tu cuenta?
+					<a href="#">
+						<center>REGÍSTRATE</center>
+					</a>
+				</p>	
+		</div>
 	</div>
-</div>
 <!--cierre-->
 <!--Singup Modal-->
-<div class="Modal-Singup">
-	<div class="contenedor-Singup">
-	  
-		<div class="cerrar" onclick="closeSingupForm()">×</div>
-		<div class="namePage">
-		<h1><strong>DEVZONEEE</strong></h1>
-	  </div>
-		<div class="datos">
-		  <input type="text" placeholder="Username" required ><br ><br >
-		  <hr >
-		  <input type="email" placeholder="Example@mail.com" required ><br ><br >
-		  <hr >
-		  <input type="password" placeholder="Password" required><br ><br >
-		  <hr >
-		  <input type="password" placeholder="Confirm Password" required><br ><br ><hr >
+	<div class="Modal-Singup">
+		<div class="contenedor-Singup">
+			<div class="cerrar" onclick="closeSingupForm()">×</div>
+			<div class="namePage">
+			<h1><strong>DEVZONE</strong></h1>
 		</div>
-		  <div class="opc">
-			<input type="submit" name="Singup" value="REGISTRARSE" >
-		  </div>
-				<p>¿Ya tienes una cuenta?<a href="#">Inicia Sesion</a></p>
-	  	</div>
-</div>
+
+		<div class="datos">
+			<input type="text" placeholder="Usuario" required ><br ><br >
+			<hr >
+			<input type="email" placeholder="Ejemplo@mail.com" required ><br ><br >
+			<hr >
+			<input type="password" placeholder="Contraseña" required><br ><br >
+			<hr >
+			<input type="password" placeholder="Confirmar contraseña" required><br><br><hr >
+		</div>
+
+		<div class="opc">
+			<input type="submit" name="Singup" value="REGISTRARSE">
+		</div>
+			<p>
+				¿Ya tienes una cuenta?
+				<a href="#">
+					<center>Inicia Sesion</center>
+				</a>
+			</p>
+		</div>
+	</div>
 <!--cerrar2-->
 	<main class="main" id="main">
 <!-- <section>Sobre Nosotros</section> -->
@@ -128,11 +136,11 @@
 					</div>
 	
 					<div class="img-somos">
-						<img src="https://drive.google.com/uc?id=1HR7a4RCBrZKZU7APkyOlG5ITlemqenUK" loading="lazy">
+						<img src="imagenes/libro_resaltadores.jpg" loading="lazy">
 					</div>
 	
 					<div class="img-somos">
-						<img src="https://drive.google.com/uc?id=13DsfW76MPJbDWFh7qMKB58C8brY7khuF" loading="lazy">
+						<img src="imagenes/robot.jpg" loading="lazy">
 					</div>
 	
 					<div class="container-elegirnos">
@@ -170,7 +178,7 @@
 					<button><a href="cursos.html">Ver más</a></button>
 				</div>
 				<script src="js/carousel.js"></script>
-			</section>
+		</section>
 		<!-- <section>Categorias populares</section> -->
 		<section id="categorias" class="categorias child-container unselectable">
 			<h2><center>Categorías populares</center></h2>
@@ -268,5 +276,6 @@
 			</div>
 		</div>
   	</footer>
+	  
 </body>
 </html>
