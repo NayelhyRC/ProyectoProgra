@@ -67,7 +67,7 @@
 
 	<script src="js/Modal.js"></script>
 	<!--login modal-->
-	<div class="Modal-Login" > 
+	<div class="Modal-Login" id="login" > 
 		<div class="contenedor-Login">
 			<div class="cerrar" onclick="closeLoginForm()">×</div>
 			<div class="namePage"><h1><strong>DEVZONE</strong></h1></div>
@@ -95,32 +95,32 @@
 		<div class="contenedor-Singup">
 			<div class="cerrar" onclick="closeSingupForm()">×</div>
 			<div class="namePage">
-			<h1><strong>DEVZONE</strong></h1>
-		</div>
-
-		<form class="registrar" method="POST" action="php/usuario.php">
-			<div class="datos">
-				<input type="text" placeholder="Usuario" required name="txtUsuario"><br><br>
-				<hr>
-				<input type="email" placeholder="Ejemplo@mail.com" required name="txtCorreo"><br><br>
-				<hr>
-				<input type="password" placeholder="Contraseña" required name="txtContraseña"><br><br>
-				<hr>
-				<input type="password" placeholder="Confirmar contraseña" required name="txtConfirmacionContraseña">
-				<br><br><hr >
+				<h1><strong>DEVZONE</strong></h1>
 			</div>
 
-			<div class="opc">
-				<input type="submit" name="Singup" value="REGISTRARSE">
-			</div>
-		
-			<p>
-				¿Ya tienes una cuenta?
-				<a href="#">
-					<center>Inicia Sesión</center>
-				</a>
-			</p>
-		</form>
+			<form class="registrar" method="POST" action="php/usuario.php">
+				<div class="datos">
+					<input type="text" placeholder="Usuario" required name="txtUsuario"><br><br>
+					<hr>
+					<input type="email" placeholder="Ejemplo@mail.com" required name="txtCorreo"><br><br>
+					<hr>
+					<input type="password" placeholder="Contraseña" required name="txtContraseña"><br><br>
+					<hr>
+					<input type="password" placeholder="Confirmar contraseña" required name="txtConfirmacionContraseña">
+					<br><br><hr >
+				</div>
+
+				<div class="opc">
+					<input type="submit" name="Singup" value="REGISTRARSE">
+				</div>
+			
+				<p>
+					¿Ya tienes una cuenta?
+					<a href="nosotros.html">
+						<center>Inicia Sesión</center>
+					</a>
+				</p>
+			</form>
 		</div>
 	</div>
 <!--cerrar2-->
