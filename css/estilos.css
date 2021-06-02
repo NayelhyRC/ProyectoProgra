@@ -6,7 +6,7 @@
 
 :root {
   --bg-color-pantalla-inicio: rgb(17, 52, 72, 0.6);
-  --bg-color-principal: rgb(17, 52, 72);
+  --bg-color-principal: rgb(17, 52, 72); 
   --bg-color-secundario: #14bf98;
   --radio-borde-div: 20px;
   --margin-div-img: 1.5rem;
@@ -45,7 +45,8 @@ button {
   background-color: var(--bg-color-secundario);
   border-radius: 5.5px;
   border-width: 0;
-  justify-items: center;
+  /* justify-items: center; */
+  text-align: center;
   font-weight: bold;
   font-size: 1rem;
   text-transform: uppercase;
@@ -101,8 +102,9 @@ p {
   user-select: none;
 }
 
-#boton-VerMas {
-  text-align: center;
+.divBoton{
+  display: flex;
+  justify-content: center;
 }
 /*CSS DEL INICIO DE PANTALLA COMPLETA*/
 

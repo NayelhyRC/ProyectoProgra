@@ -9,9 +9,10 @@
             $user = $usuario->getUsuario();
             $contra = $usuario->getContraseña();
             $correo = $usuario->getCorreo();
+            $tipo = $usuario->getTipo();
 
             $sql = "INSERT INTO Usuario(Usuario, Contraseña, Tipo, Correo) 
-                    VALUES ('$user','$contra', 'A','$correo')";
+                    VALUES ('$user','$contra', '$tipo','$correo')";
             $this->Conectar();
             $this->EjecutarSqlEdit($sql);
             $this->Cerrar();

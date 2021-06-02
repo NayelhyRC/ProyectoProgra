@@ -100,7 +100,10 @@
 
 			<form class="registrar" method="POST" action="Fomularios/funUsuario.php">
 				<div class="datos">
-					<input tpe="radio" id="estudiante" name="rbtntipo"> <label for="estudiante">Estudiante</label>
+					<input type="radio" id="estudiante" name="rbtnTipo" value="E"> 
+					<label for="estudiante">Estudiante</label>
+					<input type="radio" id="docente" name="rbtnTipo" value="D"> 
+					<label for="docente">Docente</label><br>
 					<input type="text" placeholder="Usuario" required name="txtUsuario"><br><br>
 					<hr>
 					<input type="email" placeholder="Ejemplo@mail.com" required name="txtCorreo"><br><br>
@@ -169,7 +172,7 @@
 							</div>
 					</div>
 				</div>
-				<div id="boton-verMas">
+				<div class="divBoton">
 					<button><a href="nosotros.html">Leer más</a></button>
 				</div>
 			</section>
@@ -178,7 +181,7 @@
 		<section id="cursos" class="child-container">
 				<br>
 				<iframe src="Slider/prueba.html" style="border-style: none;width: 100%; height: 350px;" scrolling="no"></iframe>
-				<div id="boton-verMas">
+				<div class="divBoton">
 					<br>
 					<button><a href="cursos.html">Ver más</a></button>
 				</div>
@@ -209,7 +212,7 @@
 					<p class="text-card">13 cursos</p>
 				</div>
 			</div>
-			<div id="boton-verMas">
+			<div class="divBoton">
 				<button><a href="cursos.html">Ver más</a></button>
 			</div>
 		</section>
