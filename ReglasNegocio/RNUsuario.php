@@ -6,14 +6,15 @@
     {
         public function Registrar(Usuario $usuario)
         {
-            $sql = "INSERT INTO Usuario(Usuario, Contraseña, Tipo, Correo) 
-                    VALUES ('$usuario->getUsuario()','$usuario->getContraseña()', 'A','$usuario->getCorreo()')";
+            $user = $usuario->getUsuario();
+            $contra = $usuario->getContraseña();
+            $correo = $usuario->getCorreo();
 
+            $sql = "INSERT INTO Usuario(Usuario, Contraseña, Tipo, Correo) 
+                    VALUES ('$user','$contra', 'A','$correo')";
             $this->Conectar();
             $this->EjecutarSqlEdit($sql);
             $this->Cerrar();
-            
-            // header("location: ../index.html");
         }
     }
 ?>
