@@ -8,9 +8,10 @@
         {
             $nom = $per->getNombres();
             $apPat = $per->getApellidoPaterno();
-            $apMat = $per->getApellidoPaterno();
+            $apMat = $per->getApellidoMaterno();
+            $fechaNac = $per->getFechaNacimiento();
             $sql = "INSERT INTO persona(Nombres,ApellidoPaterno, ApellidoMaterno, FechaNacimiento) 
-            VALUES ('$per->getDescripcion()',$per->getEstado())";
+            VALUES ('$nom','$apPat','$apMat','$fechaNac')";
             $this->Conectar();
             $this->EjecutarSqlEdit($sql);
             $this->Cerrar();
