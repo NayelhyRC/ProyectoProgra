@@ -2,20 +2,23 @@
     class Conexion
     {
         private $Conexion;
+        
         protected function Conectar()
         {
             $host="localhost";
             $user="root";
             $pass="root";
-            $db="xd";
+            // $db="xd";
+            $db = "plataforma_cursos";
     
             $conexion=mysqli_connect($host,$user,$pass,$db);
+            mysqli_set_charset($conexion, "utf8");
             $this->Conexion = $conexion;
         }
 
         protected function Cerrar()
         {
-            mysqli_close($Conexion);
+            mysqli_close($this->Conexion);
         }
 
         protected function EjecutarSqlEdit($sql)
