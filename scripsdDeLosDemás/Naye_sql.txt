@@ -1,0 +1,28 @@
+use plataforma_cursos
+CREATE TABLE Usuario
+(
+	Id 					TINYINT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	Usuario 		VARCHAR(50),
+	Contraseña	VARCHAR(40),
+	Tipo 				CHAR(1),
+	Correo 			VARCHAR(50)
+)ENGINE=InnoDB AUTO_INCREMENT=1;
+
+CREATE TABLE Pais
+(
+	Id 			TINYINT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	Nombre 	VARCHAR(70) NOT NULL
+)ENGINE=InnoDB;
+
+CREATE TABLE Persona
+(
+	Id	SMALLINT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	Nombres	VARCHAR(50) NOT NULL,
+	ApellidoPaterno VARCHAR(40) NOT NULL,
+	ApellidoMaterno VARCHAR(40),
+	IdPais TINYINT NOT NULL,
+	CONSTRAINT FOREIGN KEY fk_persona_pais(IdPais)
+		REFERENCES Pais(Id), 
+	FechaNacimiento DATE,
+	Tipo CHAR(1) NOT NULL -- docente o alumno
+)ENGINE=InnoDB AUTO_INCREMENT=1;
