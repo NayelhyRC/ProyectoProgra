@@ -13,9 +13,30 @@
             Nombres: <input type="text" placeholder="" name="txtNombres"><br><br>
             Apellido Paterno: <input type="text" placeholder="" name="txtApellidoPat"><br><br>
             Apellido Materno: <input type="text" placeholder="" name="txtApellidoMat"><br><br>
-            Confirmar contraseña: <input type="password" name="txtConfirmacionContraseña"><br><br>
+            Fecha de nacimiento: <input type="date" name="dtpFechaNacimiento"><br><br>
             <input type="submit" name="btnEnviar" value="Registrar">
         </form>
     </div>
+
+    <?php
+        include '../ReglasNegocio/RNPersona.php';
+
+        function Registrar()
+        {
+            if (isset($_POST)) {
+                $entidad = new Persona;
+                $entidad->setNombres($_POST['txtNombres']);
+                $entidad->setApellidoPaterno($_POST['txtApellidoPat']);
+                $entidad->setApellidoMaterno($_POST['txtApellidoMat']);
+                $entidad->setFechaNacimiento($_POST['dtpFechaNacimiento']);
+    
+                $rn = new RNPersona;
+                $rn->Registrar($entidad);
+                header("location: ../index.html");
+            }
+        }
+    
+        Registrar();
+    ?>
 </body>
 </html>
