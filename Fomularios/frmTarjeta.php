@@ -2,53 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
 	<link rel="stylesheet" type="text/css" href="../css/responsive.css">
 	<link rel="stylesheet" type="text/css" href="../iconos/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/styleModal.css">
 	<link rel="stylesheet" type="text/css" href="../iconos/LSiconsStyle.css">
-    <style>
-        .Target-Container{
-            position: sticky;
-            width: 80vw;
-            height: 70vh;
-            border-radius: 10px;
-            margin: 50px auto 50px auto;
-            display:flex;
-            box-shadow: 2px 1px black;
-            overflow:hidden;
-        }
-        .left-Target{
-            width: 100%;
-            background-color: #A3E4D7;
-			font-size: 25px;
-        }
-		.left-Target input[type="text"]{
-            height: 40px;
-            width: 20vw;
-            margin: 5px 0px 5px 40px;
-			border:none;
-			border-radius: 15px;
-        }
-		.left-Target input[type="text"]:focus{
-			outline: none;
-			transform: 1200ms ease;
-            background-color: blue;
-        }
-        .rigth-Target{
-            display: none;
-            width: 50%;
-            background-color: #A3D7;
-            align-items: center;
-            justify-content: center;
-        }
-        .target-img{
-            width: 90%;
-            height: 80%;
-        }
-    </style>
-    <title>Document</title>
+	<link rel="stylesheet" href="../css/styleTarjeta.css">
+    <title>Devzonee</title>
 </head>
 <body>
 	<header class="barra-menu header unselectable">
@@ -65,34 +27,34 @@
 			</ul>
 		</nav>
     </header>
-		<script>
-			function ColorChange(){
-				let i = document.getElementById('num');
-				i.style.backgroundColor='blue';
-			}
-		</script>
-	<section>
-    <div class="Target-Container">
-        <div class="left-Target">
-        <form action="" method="post">
-            <p>Numero Tarjeta:</p>
-            <input type="text" name="Numero" id='num 'onfocus="ColorChange()"><br>
-            <p>CCI:</p>
-            <input type="text" name="CCI"><br>
-            <p>Banco:</p>
-            <div class="BankOption"><input type="radio" name="Banco"><div>
-            <br>
-            <br>
-            <input type="submit" name="Registrer">
-        </form>
-        </div>
-        <div class="rigth-Target">
-            <img class="target-img" src="../imagenes/Tarjeta.png">
-        </div>
-    </div>
-    </section>
 
-    <footer class="footer">
+<section>
+	<div class="Tarjeta-Contenedor">
+		<div class="left">
+		<form action=" method="post">
+				<p>Numero Tarjeta:</p>
+				<input type="text" name="Numero"><br>
+				<p>CCI:</p>
+				<input type="text" name="CCI"><br>
+				<p>Banco:</p>
+				<div class="option">
+				<input type="radio" name="Banco" value="Visa" id="1"><label for="1" class="BankOption"><img src="../imagenes/Visa.png"></label>
+				<input type="radio" name="Banco" value="MasterCard" id="2"><label for="2"class="BankOption"><img src="../imagenes/MasterCard.png"></label>
+				<input type="radio" name="Banco" value="PayPal" id="3"><label for="3" class="BankOption"><img src="../imagenes/PayPal.png"></label>
+				</div>
+				<br>
+				<br>
+				<input type="submit" name="Registrer">
+			</form>
+		</div>
+		<div class="rigth">
+			<img src="../imagenes/Tarjeta.png" alt="">
+		</div>
+	</div>
+</section>    
+
+
+<footer class="footer">
 		<div id="contacto" class="contacto">
 			<div class="containter-footer-body child-container" id="footer">
 				<div class="columns column1">
