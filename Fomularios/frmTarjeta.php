@@ -27,15 +27,27 @@
 			</ul>
 		</nav>
     </header>
-
+	<script>
+		function validaNumericos(event) {
+    		if(event.charCode >= 48 && event.charCode <= 57){
+					return true;
+     		}
+     	return false;        
+		}
+	</script>
 <section>
 	<div class="Tarjeta-Contenedor">
 		<div class="left">
 		<form action=" method="post">
 				<p>Numero Tarjeta:</p>
-				<input type="text" name="Numero"><br>
+				<div class="number">
+					<input type="text" name="Numero1" maxlength="4" onkeypress='return validaNumericos(event)'> - 
+					<input type="text" name="Numero2" maxlength="4" onkeypress='return validaNumericos(event)'> - 
+					<input type="text" name="Numero3" maxlength="4" onkeypress='return validaNumericos(event)'> -
+					<input type="text" name="Numero4" maxlength="4" onkeypress='return validaNumericos(event)'>
+				</div>
 				<p>CCI:</p>
-				<input type="text" name="CCI"><br>
+				<input type="text" name="CCI" id="cci" maxlength="20" onkeypress='return validaNumericos(event)'><br>
 				<p>Banco:</p>
 				<div class="option">
 				<input type="radio" name="Banco" value="Visa" id="1"><label for="1" class="BankOption"><img src="../imagenes/Visa.png"></label>
@@ -43,8 +55,9 @@
 				<input type="radio" name="Banco" value="PayPal" id="3"><label for="3" class="BankOption"><img src="../imagenes/PayPal.png"></label>
 				</div>
 				<br>
+				<input type="submit" name="Registrer" value="Guardar">
 				<br>
-				<input type="submit" name="Registrer">
+				<br>
 			</form>
 		</div>
 		<div class="rigth">
