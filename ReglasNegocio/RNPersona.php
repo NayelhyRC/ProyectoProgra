@@ -10,8 +10,9 @@
             $apPat = $per->getApellidoPaterno();
             $apMat = $per->getApellidoMaterno();
             $fechaNac = $per->getFechaNacimiento();
-            $sql = "INSERT INTO persona(Nombres,ApellidoPaterno, ApellidoMaterno, FechaNacimiento) 
-            VALUES ('$nom','$apPat','$apMat','$fechaNac')";
+            $pais = $per->getPais();
+            $sql = "INSERT INTO persona(Nombres,ApellidoPaterno, ApellidoMaterno, FechaNacimiento, Tipo, Estado,Pais) 
+            VALUES ('$nom','$apPat','$apMat','$fechaNac', 'E',1,'$pais')";
             $this->Conectar();
             $this->EjecutarSqlEdit($sql);
             $this->Cerrar();

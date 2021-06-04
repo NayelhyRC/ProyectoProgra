@@ -27,7 +27,7 @@
             if($result === true){
                 return $result;
             }else{
-                echo 'Error al realizar la operación';
+                echo 'Error al realizar la operación de escritura';
             }
         }
 

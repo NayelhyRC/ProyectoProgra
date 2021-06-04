@@ -22,7 +22,7 @@
         }
 
         public function Eliminar(Tarjeta $Tarjeta){
-            $delete = "DELETE FROM Tarjeta WHERE $Tarjeta->getIdPersona();"
+            $delete = "DELETE FROM Tarjeta WHERE $Tarjeta->getIdPersona()";
         }
     }
 

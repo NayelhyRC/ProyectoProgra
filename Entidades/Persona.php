@@ -4,6 +4,7 @@
         private $apellidoPaterno;
         private $apellidoMaterno;
         private $fechaNacimiento;
+        private $pais;
 
         /**
          * Get the value of apellidoMaterno
@@ -81,6 +82,26 @@
         public function setFechaNacimiento($fechaNacimiento)
         {
                 $this->fechaNacimiento = $fechaNacimiento;
+
+                return $this;
+        }
+
+        /**
+         * Get the value of pais
+         */ 
+        public function getPais()
+        {
+                return $this->pais;
+        }
+
+        /**
+         * Set the value of pais
+         *
+         * @return  self
+         */ 
+        public function setPais($pais)
+        {
+                $this->pais = $pais;
 
                 return $this;
         }
