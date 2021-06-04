@@ -1,8 +1,8 @@
 @import "_Mixin";
 .contenedor-Singup {
     @include ContainerGeneric;
-    width: 270px;
-    height: 410px;
+    width: 800px;
+    height: 800px;
 }
 body.showSingupForm .Modal-Singup {
     display: block;

@@ -3,7 +3,7 @@
 
         function Registrar()
         {
-            if (isset($_POST['btnEnviar'])) {
+            if (isset($_POST)) {
                 $entidad = new Persona;
                 $entidad->setNombres($_POST['txtNombres']);
                 $entidad->setApellidoPaterno($_POST['txtApellidoPat']);
@@ -13,6 +13,7 @@
     
                 $rn = new RNPersona;
                 $rn->Registrar($entidad);
+                header("location: ../frmPersona.html");
             }
         }
     
