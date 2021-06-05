@@ -38,7 +38,7 @@
 <section>
 	<div class="Tarjeta-Contenedor">
 		<div class="left">
-		<form action=" method="post">
+		<form action="../Fomularios/TarjetaRegistrar.php" method="post">
 				<p>Numero Tarjeta:</p>
 				<div class="number">
 					<input type="text" name="Numero1" maxlength="4" onkeypress='return validaNumericos(event)'> - 
@@ -64,9 +64,7 @@
 			<img src="../imagenes/Tarjeta.png" alt="">
 		</div>
 	</div>
-</section>    
-
-
+</section>
 <footer class="footer">
 		<div id="contacto" class="contacto">
 			<div class="containter-footer-body child-container" id="footer">
