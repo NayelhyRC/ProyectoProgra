@@ -7,9 +7,8 @@
     <link rel="stylesheet" type="text/css" href="../css/estilos.css?v=<?php echo time(); ?>">
 	<link rel="stylesheet" type="text/css" href="../css/responsive.css">
 	<link rel="stylesheet" type="text/css" href="../iconos/style.css">
-	<link rel="stylesheet" type="text/css" href="../css/styleLS.css">
-	<link rel="stylesheet" type="text/css" href="../iconos/LSiconsStyle.css">
-    <link rel="stylesheet" type="text/css" href="../SassNaye/estilo-persona.css">
+	<!-- <link rel="stylesheet" type="text/css" href="../css/styleLS.css"> -->
+    <link rel="stylesheet" type="text/css" href="../SassNaye/estilo-persona.css?v=<?php echo time(); ?>">
     <title>DevZone</title>
 </head>
 <body>
@@ -277,7 +276,9 @@
                 <option value="ZW">Zimbabue</option>
             </select>
             <br>
-            <input type="submit" name="btnEnviar" value="Guardar">
+            <div id="div-btn">
+                <input type="submit" name="btnEnviar" value="Guardar">
+            </div>
         </form>
 
         <script>

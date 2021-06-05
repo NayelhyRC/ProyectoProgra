@@ -51,7 +51,7 @@ body.showLoginForm .contenedor-Login {
   opacity: 0;
   box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2);
   transition: transform 1000ms ease-in-out, opacity 300ms ease-in-out;
-  width: 300px;
+  width: 800px;
   height: 440px; }
 
 body.showSingupForm .Modal-Singup {

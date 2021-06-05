@@ -1,4 +1,6 @@
+$bg-color-principal: rgb(17, 52, 72);
 $bg-color-secundario: #14bf98;
+$bg-color-pantalla-inicio: rgba(17, 52, 72, 0.6);
 
 *{
     padding: 0;
@@ -14,7 +16,21 @@ label{
     height: auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    // background: $bg-color-pantalla-inicio;
+    // background-image: url(../imagenes/boy-table.jpg);
+    // background-size: cover;
+    // position: relative;
+    // width: 100%;
 }
+
+// .container::after{
+//     content: '';
+//     position: absolute;
+//     background-color:$bg-color-pantalla-inicio;
+//     width: 100%;
+//     height: 100%;
+// }
 
 .container h2{
     text-align: center;
@@ -22,7 +38,7 @@ label{
 
 #form-persona{
     height: auto;
-    width: 40vw;
+    // width: 40vw;
     margin: auto;
     padding: 2rem;
 }
@@ -44,4 +60,23 @@ label{
     font-weight: bold;
     border: none;
     margin: 1rem;
+}
+
+#form-persona input[type="submit"]:active{
+    width: 10rem;
+    height: 2rem;
+    font-size: 1.15rem;
+    background-color: $bg-color-secundario;
+    border-radius: 5px ;
+    color: white;
+    font-weight: bold;
+    border: none;
+    margin: 1rem;
+}
+
+#div-btn{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    // text-align: center;
 }

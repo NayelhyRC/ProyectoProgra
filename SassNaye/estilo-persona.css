@@ -9,14 +9,14 @@ label {
 .container {
   height: auto;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center; }
 
 .container h2 {
   text-align: center; }
 
 #form-persona {
   height: auto;
-  width: 40vw;
   margin: auto;
   padding: 2rem; }
 
@@ -36,3 +36,19 @@ label {
   font-weight: bold;
   border: none;
   margin: 1rem; }
+
+#form-persona input[type="submit"]:active {
+  width: 10rem;
+  height: 2rem;
+  font-size: 1.15rem;
+  background-color: #14bf98;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  margin: 1rem; }
+
+#div-btn {
+  margin: auto;
+  display: flex;
+  justify-content: center; }
