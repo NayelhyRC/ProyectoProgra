@@ -7,7 +7,7 @@
         {
             $host="localhost";
             $user="root";
-            $pass="root";
+            $pass='';
             // $db="xd";
             $db = "basedatosprogramacion";
     

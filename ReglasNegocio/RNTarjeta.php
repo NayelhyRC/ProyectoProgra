@@ -5,24 +5,33 @@
     class RNTarjeta extends Conexion{
 
         public function Registrar(Tarjeta $Tarjeta){
+            $numero=$Tarjeta->getNumeroTarjeta();
+            $cci = $Tarjeta->getCCI();
+            $banc = $Tarjeta->getBanco();
+            $id = $Tarjeta->getIdPersona();
             $insert = "INSERT INTO Tarjeta(NumeroTarjeta,CCI,Banco,Id_Persona) 
-            VALUES ('$Tarjeta->getNumeroTarjeta()','$Tarjeta->getCCI()','$Tarjeta->getBanco()','$Tarjeta->getIdPersona()')";
+            VALUES ('$numero','$cci','$banc','$id')";
             $this->Conectar();
             $this->EjecutarSqlEdit($insert);
             $this->Cerrar();
         }
 
         public function Modificar(Tarjeta $Tarjeta){
+            $numero=$Tarjeta->getNumeroTarjeta();
+            $cci = $Tarjeta->getCCI();
+            $banc = $Tarjeta->getBanco();
+            $id = $Tarjeta->getIdPersona();
             $update = "UPDATE Tarjeta
-            SET NumeroTarjeta='$Tarjeta->getNumeroTarjeta()',CCI='$Tarjeta->getCCI()',Banco='$Tarjeta->getBanco()'
-            WHERE Id_Persona = $Tarjeta->getIdPersona()";
+            SET NumeroTarjeta='$numero',CCI='$cci',Banco='$banc'
+            WHERE Id_Persona = $id";
             $this->Conectar();
             $this->EjecutarSqlEdit($update);
             $this->Cerrar();
         }
 
         public function Eliminar(Tarjeta $Tarjeta){
-            $delete = "DELETE FROM Tarjeta WHERE $Tarjeta->getIdPersona()";
+            $id = $Tarjeta->getIdPersona();
+            $delete = "DELETE FROM Tarjeta WHERE $id";
         }
     }
 
