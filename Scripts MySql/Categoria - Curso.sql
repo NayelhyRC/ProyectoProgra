@@ -2,7 +2,7 @@ CREATE TABLE Categoria
 (
 	Descripcion          VARCHAR(20) NULL,
 	Estado               boolean NULL,
-	Id                   INTEGER NOT NULL,
+	Id                   INTEGER AUTO_INCREMENT NOT NULL,
 	PRIMARY KEY (Id)
 );
 
@@ -13,7 +13,7 @@ CREATE TABLE Curso
 	Precio               DECIMAL(10,4) NULL,
 	Idioma               VARCHAR(20) NULL,
 	Duracion             DATE NULL,
-	Id                   INTEGER NOT NULL,
+	Id                   INTEGER AUTO_INCREMENT NOT NULL,
 	IdCategoria          INTEGER NULL,
 	Estado               boolean NULL,
 	PRIMARY KEY (Id),

@@ -1,0 +1,21 @@
+$bg-color-pantalla-inicio: rgba(17, 52, 72, 0.6);
+$bg-color-principal: rgb(17, 52, 72);
+$bg-color-secundario: #14bf98;
+$radio-borde-div: 20px;
+$margin-div-img: 1.3rem;
+$sombra-color: rgba(20, 191, 152, 0.4) 5px 5px,
+    rgba(20, 191, 152, 0.3) 10px 10px, rgba(20, 191, 152, 0.2) 15px 15px;
+$btn-color-hover: #6A808D;
+
+.group {
+    margin: auto;
+    padding: 10px;
+    width: 340px;
+}
+
+.frmCategoria {
+    display: flex;
+    flex-direction: column;
+    margin:  auto;
+    max-width: 320px;
+}

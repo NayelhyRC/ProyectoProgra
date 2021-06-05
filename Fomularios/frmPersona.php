@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/estilos.css?v=<?php echo time(); ?>">
 	<link rel="stylesheet" type="text/css" href="../css/responsive.css">
-	<link rel="stylesheet" type="text/css" href="../iconos/style.css">
-	<link rel="stylesheet" type="text/css" href="../css/styleLS.css">
-	<link rel="stylesheet" type="text/css" href="../iconos/LSiconsStyle.css">
-    <link rel="stylesheet" type="text/css" href="../SassNaye/estilo-persona.css">
+	<link rel="stylesheet" type="text/css" href="../iconos/style.css?v=<?php echo time(); ?>">
+	<!-- <link rel="stylesheet" type="text/css" href="../css/styleLS.css?v=<?php echo time(); ?>"> -->
+    <link rel="stylesheet" type="text/css" href="../SassNaye/estilo-persona.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" type="text/css" href="../iconos/LSiconsStyle.css">
     <title>DevZone</title>
 </head>
 <body>
@@ -23,8 +23,8 @@
 				<li class="titulo"><a class="opcionNav" href="#cursos"><i class="ico-books"></i><span> CURSOS</span></a></li>
 				<li class="titulo"><a class="opcionNav" href="#testimonios"><i class="ico-users"></i><span> TESTIMONIOS</span></a></li>
 				<li class="titulo"><a class="opcionNav" href="#contacto"><i class="ico-hangouts"></i><span> CONTACTO</span></a></li>
-				<!-- <li class="titulo"><a class="opcionNav" href="#" onclick="openLoginForm()"><i  class="icon-key"></i><span> INCIAR SESION</span></a></li>			
-				<li class="titulo"><a class="opcionNav" onclick="openSingupForm()"><i class="icon-sign-in"></i><span > REGISTRARSE</span></a></li> -->
+				<li class="titulo"><a class="opcionNav" href="#" onclick="openLoginForm()"><i  class="icon-key"></i><span> INCIAR SESIÓN</span></a></li>			
+				<!-- <li class="titulo"><a class="opcionNav" onclick="openSingupForm()"><i class="icon-sign-in"></i><span > REGISTRARSE</span></a></li> -->
 			</ul>
 		</nav>
 	</header>
@@ -277,7 +277,9 @@
                 <option value="ZW">Zimbabue</option>
             </select>
             <br>
-            <input type="submit" name="btnEnviar" value="Guardar">
+            <div id="div-btn">
+                <input type="submit" name="btnEnviar" value="Guardar">
+            </div>
         </form>
 
         <script>

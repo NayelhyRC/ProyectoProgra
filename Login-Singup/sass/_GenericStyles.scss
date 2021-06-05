@@ -63,13 +63,13 @@ $color :white;
     text-align: center;
     font-size: 1em;
     color: white;
-    height: 80px;
+    height: 65px;
     background-color:$bg-color-principal;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
   }
   .namePage h1 {
-    line-height: 12px;
+    line-height: 2px;
   }
   /*DATOS*/
   .contenedor-Singup .datos {
@@ -82,6 +82,10 @@ $color :white;
     margin-top: 15px;
     width: 60%;
     height: 45%;
+  }
+
+  .datos{
+    margin: auto;
   }
   .datos input {
     outline: none;
