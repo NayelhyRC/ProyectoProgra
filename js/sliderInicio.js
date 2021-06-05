@@ -1,7 +1,7 @@
 let slider = document.querySelector(".slider-contenedor");
 let sliderIndividual = document.querySelectorAll(".contenido-slider");
 let contador = 1;
-let intervalo = 6000;
+let intervalo = 4000;
 var width;
 function VerficarWitdh() {
   width = sliderIndividual[0].clientWidth;
@@ -15,7 +15,7 @@ setInterval(function () {
 
 function slides() {
   slider.style.transform = "translate(" + -width * contador + "px)";
-  slider.style.transition = "transform 6s";
+  slider.style.transition = "transform 4s";
   contador++;
 
   if (contador === sliderIndividual.length) {
@@ -23,6 +23,6 @@ function slides() {
       slider.style.transform = "translate(0px)";
       slider.style.transition = "transform 0s";
       contador = 1;
-    }, (2800*2));
+    }, (2800*1.4));
   }
 }
