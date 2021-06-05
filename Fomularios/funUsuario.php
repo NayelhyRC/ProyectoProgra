@@ -8,16 +8,17 @@
             $entidad->setUsuario($_POST['txtUsuario']);
             $entidad->setCorreo($_POST['txtCorreo']);
             $entidad->setContraseña($_POST['txtContraseña']);
-            // $contra = ($_POST['txtContraseña']);
-            // $confirma= ($_POST['txtConfirmacionContraseña']);
-            // if ($contra === $confirma){
-                
+            //validación de contraseñas xdxd
+            $contra = ($_POST['txtContraseña']);
+            $confirma = ($_POST['txtConfirmacionContraseña']);
+            if ($contra === $confirma){
+                $rn = new RNUsuario;
+                $rn->Registrar($entidad);
+                header("location: ../index.php");
+            }
+            // else{
+            //     echo "las contraseñas no coinciden";
             // }
-            // $entidad->setTipo($_POST['rbtnTipo']);
-
-            $rn = new RNUsuario;
-            $rn->Registrar($entidad);
-            header("location: ../index.php");
         }
     }
 

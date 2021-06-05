@@ -1,6 +1,6 @@
 CREATE TABLE Categoria
 (
-	Descripcion          VARCHAR(20) NULL,
+	Descripcion          VARCHAR(50) NULL,
 	Estado               boolean NULL,
 	Id                   INTEGER AUTO_INCREMENT NOT NULL,
 	PRIMARY KEY (Id)
@@ -9,7 +9,7 @@ CREATE TABLE Categoria
 CREATE TABLE Curso
 (
 	Nombre               VARCHAR(20) NULL,
-	Descripcion          VARCHAR(20) NULL,
+	Descripcion          VARCHAR(300) NULL,
 	Precio               DECIMAL(10,4) NULL,
 	Idioma               VARCHAR(20) NULL,
 	Duracion             DATE NULL,

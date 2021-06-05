@@ -9,7 +9,6 @@
             $user = $usuario->getUsuario();
             $contra = $usuario->getContraseña();
             $correo = $usuario->getCorreo();
-            // $tipo = $usuario->getTipo();
 
             $sql = "INSERT INTO Usuario(Usuario, Contraseña, Tipo, Correo) 
                     VALUES ('$user','$contra', 'E','$correo')";
@@ -18,5 +17,18 @@
             $this->EjecutarSqlEdit($sql);
             $this->Cerrar();
         }
+
+        public function ValidarLogin(Usuario $usuario){
+            $contra = $usuario->getContraseña();
+            $correo = $usuario->getCorreo();
+    
+            $solicitud = "SELECT U.Id 
+                    FROM Usuario U
+                    WHERE U.Correo = '$correo' AND U.Contraseña = '$contra'";
+    
+            $resultado = mysqli_query($Conexion, $solicitud);
+            return $resultado;
+        }
+
     }
 ?>

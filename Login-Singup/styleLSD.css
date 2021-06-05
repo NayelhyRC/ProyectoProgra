@@ -1,6 +1,13 @@
 body{
   margin:0;
 }
+
+* {
+  /* margin: 0;
+  padding: 0; */
+  font-family: Candara, Verdana, sans-serif;
+}
+
 :root {
   --bg-color-pantalla-inicio: rgb(17, 52, 72, 0.6);
   --bg-color-principal: rgb(17, 52, 72); 
@@ -8,14 +15,23 @@ body{
   --radio-borde-div: 20px;
   --margin-div-img: 1.5rem;
 }
+
+@font-face {
+  font-family: ‘kollektifregular’;
+  src: url(‘https://tuweb.co/fuentes/kollektif-webfont.woff2′) format(‘woff2’),
+    url(‘https://tuweb.co/fuentes/kollektif-webfont.woff’) format(‘woff’);
+}
+
 img{
   position: absolute;
   width: 100vw;
   height: 100vh;
   z-index: -1;
 }
+
 p {
-  height: 1em; }
+  text-align: center;
+}
 
 a{
   font-weight: bold;
@@ -24,9 +40,21 @@ a{
 }
 
 a:hover {
-  color: var(--bg-color-secundario); }
+  color: var(--bg-color-secundario); 
+}
+
 #back{
-  color: var(--bg-color-secundario);
+  background-color: var(--bg-color-secundario);
+  color: white;
+  width:13em;
+  height: 20px;
+  border: 0px;
+  border-radius: 10em;
+  text-align: center;
+}
+
+#back:hover{  
+  background-color: var(--bg-color-principal);
 }
 .contenedor-Login {
   width: 18em;
@@ -41,6 +69,7 @@ a:hover {
   overflow: hidden;
   z-index: 1;
 }
+
 .contenedor-Singup{
   width: 18em;
   height: 30em; 
@@ -57,14 +86,19 @@ a:hover {
 
 .datos {
   font-family: "Courier New", Courier, monospace;
-    margin-top: 1em;
-    height: 20em;
+  margin-top: 1em;
+  height: 20em;
 }
+
+.datosL{
+  margin-top: 1em;
+}
+
 .contenedor-Singup .datos{
   margin-top: 0em;
   height: 17em;
 }
-.datos input {
+.datos, .datosL input {
   font-size: 1em;
   outline: none;
   border: 0px;
@@ -72,10 +106,10 @@ a:hover {
   margin-top: 30px;
 }
 
-.datos input::placeholder {
+.datos, .datosL input::placeholder {
   color: #9b9ea7; }
 
-.datos hr {
+.datos, .datosL hr {
   position: relative;
   background-color: var(--bg-color-principal);
   margin-top: -15px;
@@ -95,7 +129,9 @@ a:hover {
   width:13em;
   height: 40px;
   border: 0px;
-  border-radius: 10em; }
+  border-radius: 10em; 
+  font-weight: bold;
+}
 
 .opc input:hover {
   transition: 0.8s;

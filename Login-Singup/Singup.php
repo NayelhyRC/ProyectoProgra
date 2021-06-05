@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="styleLSD.css">
-    <title>Document</title>
+	<link rel="stylesheet" type="text/css" href="styleLSD.css?v=<?php echo time(); ?>">
+	<!-- <link rel="stylesheet" type="text/css" href="../css/estilos.css?v=<?php echo time(); ?>"> -->
+	<link rel="stylesheet" type="text/css" href="../css/responsive.css">
+    <title>DevZone</title>
 </head>
 <body>
 	<img src="../imagenes/libros_mesa.jpg" alt="">
@@ -15,7 +17,7 @@
 				<h1><strong>DEVZONE</strong></h1>
 			</div>
 
-			<form class="registrar" method="POST" action="Fomularios/funUsuario.php">
+			<form class="registrar" method="POST" action="../Fomularios/funUsuario.php">
 				<div class="datos">
 					<!-- <input type="radio" id="estudiante" name="rbtnTipo" value="E"> 
 					<label for="estudiante">Estudiante</label>
@@ -35,7 +37,8 @@
 					<input type="submit" name="Singup" value="REGISTRARSE">
 				</div>
 				<p>
-					¿Ya tienes una cuenta?<a href="nosotros.html">
+					¿Ya tienes una cuenta?
+					<a href="../Login-Singup/Login.php">
 						<center>Inicia Sesión</center>
 					</a>
 				</p>
@@ -43,7 +46,7 @@
 		</div>
 		
 		<br>
-	<a href="/index.html" id="back">Volver</a>
+	<a href="/index.php" id="back">Volver</a>
 	</div>
 </body>
 </html>

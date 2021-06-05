@@ -3,6 +3,10 @@
     {
         private $Conexion;
         
+        public function getConexion(){
+            return $this->Conexion;
+        }
+
         protected function Conectar()
         {
             $host="localhost";

@@ -60,75 +60,12 @@
 				<li class="titulo"><a class="opcionNav" href="#cursos"><i class="ico-books"></i><span> CURSOS</span></a></li>
 				<li class="titulo"><a class="opcionNav" href="#testimonios"><i class="ico-users"></i><span> TESTIMONIOS</span></a></li>
 				<li class="titulo"><a class="opcionNav" href="#contacto"><i class="ico-hangouts"></i><span> CONTACTO</span></a></li>
-				<li class="titulo"><a class="opcionNav" href="#" onclick="openLoginForm()"><i  class="icon-key"></i><span> INCIAR SESIÓN</span></a></li>			
-				<li class="titulo"><a class="opcionNav" onclick="openSingupForm()"><i class="icon-sign-in"></i><span > REGISTRARSE</span></a></li>
+				<li class="titulo"><a class="opcionNav" href="Login-Singup/Login.php"><i  class="icon-key"></i><span> INCIAR SESIÓN</span></a></li>			
+				<li class="titulo"><a class="opcionNav" href="Login-Singup/Singup.php"><i class="icon-sign-in"></i><span > REGISTRARSE</span></a></li>
 			</ul>
 		</nav>
 	</header>
 
-	<!-- <script src="js/Modal.js"></script> -->
-	<!--login modal-->
-	<!-- <div class="Modal-Login" id="login" > 
-		<div class="contenedor-Login">
-			<div class="cerrar" onclick="closeLoginForm()">×</div>
-			<div class="namePage"><h1><strong>DEVZONE</strong></h1></div>
-				<div class="datos">
-					<input type="text" placeholder="Usuario" requiered><br><br>
-					<hr>
-					<input type="password" placeholder="Contraseña" requiered ><br><br>
-					<hr>
-				</div>
-
-				<div class="opc">
-					<input type="submit" name="Login" value="INICIAR" />
-				</div>
-				<p>
-					¿Aún no creas tu cuenta?
-					<a href="#">
-						<center>REGÍSTRATE</center>
-					</a>
-				</p>	
-		</div>
-	</div> -->
-<!--cierre-->
-<!--Singup Modal-->
-	<!-- <div class="Modal-Singup">
-		<div class="contenedor-Singup">
-			<div class="cerrar" onclick="closeSingupForm()">×</div>
-			<div class="namePage">
-				<h1><strong>DEVZONE</strong></h1>
-			</div>
-
-			<form class="registrar" method="POST" action="Fomularios/funUsuario.php">
-				<div class="datos">
-					<!-- <input type="radio" id="estudiante" name="rbtnTipo" value="E"> 
-					<label for="estudiante">Estudiante</label>
-					<input type="radio" id="docente" name="rbtnTipo" value="D"> 
-					<label for="docente">Docente</label><br> -->
-					<input type="text" placeholder="Usuario" required name="txtUsuario"><br><br>
-					<hr>
-					<input type="email" placeholder="Ejemplo@mail.com" required name="txtCorreo"><br><br>
-					<hr>
-					<input type="password" placeholder="Contraseña" required name="txtContraseña"><br><br>
-					<hr>
-					<input type="password" placeholder="Confirmar contraseña" required name="txtConfirmacionContraseña">
-					<br><br><hr >
-				</div>
-
-				<div class="opc">
-					<input type="submit" name="Singup" value="REGISTRARSE">
-				</div>
-
-				<p>
-					¿Ya tienes una cuenta?
-					<a href="">
-						Inicia Sesión
-					</a>
-				</p>
-			</form>
-		</div>
-	</div> -->
-<!--cerrar2-->
 	<main class="main" id="main">
 <!-- <section>Sobre Nosotros</section> -->
 		<section id="nosotros" class="child-container">
