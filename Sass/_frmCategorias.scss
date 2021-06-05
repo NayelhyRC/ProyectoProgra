@@ -9,8 +9,9 @@ $btn-color-hover: #6A808D;
 
 .group {
     margin: auto;
-    padding: 10px;
-    width: 340px;
+    padding: 2em;
+    max-width: 340px;
+    box-sizing: border-box;
 }
 
 .frmCategoria {
@@ -18,4 +19,10 @@ $btn-color-hover: #6A808D;
     flex-direction: column;
     margin:  auto;
     max-width: 320px;
+    input:not([type=submit]), select{
+        border: 2px solid $bg-color-secundario;
+        border-radius: 5px;
+        line-height: 1.5em;
+        margin: 0.5em 0;
+    }
 }

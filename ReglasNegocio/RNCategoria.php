@@ -16,5 +16,14 @@
             $this->EjecutarSqlEdit($sql);
             $this->Cerrar();
         }
+
+        public function Listar()
+        {
+            $sql = "SELECT * FROM categoria";
+            $this->Conectar();
+            $resultado = $this->EjecutarSqlRead($sql);	
+            $this->Cerrar();
+            return $resultado;
+        }
     }
 ?>
