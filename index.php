@@ -62,7 +62,7 @@
 				<li class="titulo"><a class="opcionNav" href="#cursos"><i class="ico-books"></i><span> CURSOS</span></a></li>
 				<li class="titulo"><a class="opcionNav" href="#testimonios"><i class="ico-users"></i><span> TESTIMONIOS</span></a></li>
 				<li class="titulo"><a class="opcionNav" href="#contacto"><i class="ico-hangouts"></i><span> CONTACTO</span></a></li>
-				<li class="titulo"><a class="opcionNav" href="#" onclick="openLoginForm()"><i  class="icon-key"></i><span> INCIAR SESION</span></a></li>			
+				<li class="titulo"><a class="opcionNav" href="#" onclick="openLoginForm()"><i  class="icon-key"></i><span> INCIAR SESIÓN</span></a></li>			
 				<li class="titulo"><a class="opcionNav" onclick="openSingupForm()"><i class="icon-sign-in"></i><span > REGISTRARSE</span></a></li>
 			</ul>
 		</nav>
@@ -120,10 +120,10 @@
 				<div class="opc">
 					<input type="submit" name="Singup" value="REGISTRARSE">
 				</div>
-			
+
 				<p>
 					¿Ya tienes una cuenta?
-					<a href="nosotros.html">
+					<a href="">
 						Inicia Sesión
 					</a>
 				</p>
