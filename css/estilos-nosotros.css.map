@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAA;EACA,KAAK,EAAE,IAAI;CACd;;AAED,AAAA,EAAE,CAAA;EACE,KAAK,EAAE,KAAK;CACf;;AAED,AAAA,EAAE,CAAA;EACE,KAAK,EAAE,IAAI;CACd",
+    "sources": [
+        "../SassNaye/estilos-nosotros.scss"
+    ],
+    "names": [],
+    "file": "estilos-nosotros.css"
+}

@@ -526,4 +526,22 @@ footer .contenedor .informacion-item.contacto {
     border: none;
   }
 }
+
+.group {
+  margin: auto;
+  padding: 10px;
+  width: 340px;
+}
+
+.frmCategoria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  max-width: 320px;
+}
 /*# sourceMappingURL=style.css.map */
