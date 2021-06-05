@@ -12,10 +12,11 @@
             $monto = $compra->getMonto();
             $estado = $compra->getEstado();
             $alumno = $compra->getAlumno();
+            $idS = $_SESSION['Id'];
             // Fin valores
             
             $sql = "INSERT INTO compra (IdCurso,CodigoOperacion,Monto,Estado,IdAlumno) 
-                    VALUES ('$curso','$codigoOperacion','$monto','1','1');";
+                    VALUES ('$curso','$codigoOperacion','$monto','1',13);";
                     // VALUES ('$curso','$codigoOperacion','$monto','$estado','$alumno');";
             $this->Conectar();
             $this->EjecutarSqlEdit($sql);
