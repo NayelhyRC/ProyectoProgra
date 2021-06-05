@@ -6,8 +6,6 @@
 	<link rel="stylesheet" type="text/css" href="css/estilos.css?v=<?php echo time(); ?>">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<link rel="stylesheet" type="text/css" href="iconos/style.css">
-	<!-- <link rel="stylesheet" type="text/css" href="css/styleModal.css"> -->
-	<link rel="stylesheet" type="text/css" href="css/styleLS.css?v=<?php echo time(); ?>">
 	<link rel="stylesheet" type="text/css" href="iconos/LSiconsStyle.css">
 
 	<title>DevZone</title>
@@ -68,9 +66,9 @@
 		</nav>
 	</header>
 
-	<script src="js/Modal.js"></script>
+	<!-- <script src="js/Modal.js"></script> -->
 	<!--login modal-->
-	<div class="Modal-Login" id="login" > 
+	<!-- <div class="Modal-Login" id="login" > 
 		<div class="contenedor-Login">
 			<div class="cerrar" onclick="closeLoginForm()">×</div>
 			<div class="namePage"><h1><strong>DEVZONE</strong></h1></div>
@@ -91,10 +89,10 @@
 					</a>
 				</p>	
 		</div>
-	</div>
+	</div> -->
 <!--cierre-->
 <!--Singup Modal-->
-	<div class="Modal-Singup">
+	<!-- <div class="Modal-Singup">
 		<div class="contenedor-Singup">
 			<div class="cerrar" onclick="closeSingupForm()">×</div>
 			<div class="namePage">
@@ -129,7 +127,7 @@
 				</p>
 			</form>
 		</div>
-	</div>
+	</div> -->
 <!--cerrar2-->
 	<main class="main" id="main">
 <!-- <section>Sobre Nosotros</section> -->
