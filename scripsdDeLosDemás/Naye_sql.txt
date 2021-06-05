@@ -1,18 +1,15 @@
 use plataforma_cursos
-CREATE TABLE Usuario
-(
-	Id 					TINYINT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-	Usuario 		VARCHAR(50),
-	Contraseña	VARCHAR(40),
-	Tipo 				CHAR(1),
-	Correo 			VARCHAR(50)
-)ENGINE=InnoDB AUTO_INCREMENT=1;
 
-CREATE TABLE Pais
-(
-	Id 			TINYINT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-	Nombre 	VARCHAR(70) NOT NULL
-)ENGINE=InnoDB;
+
+CREATE TABLE Usuario (
+  Id tinyint NOT NULL,
+  Usuario varchar(50) NOT NULL,
+  Contraseña varchar(40) NOT NULL,
+  Tipo char(1) NOT NULL,
+  Correo varchar(50) NOT NULL,
+  IdPersona SMALLINT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=1;
+
 
 CREATE TABLE Persona
 (
@@ -31,3 +28,4 @@ ALTER TABLE persona
 ADD COLUMN Tipo CHAR(1) NOT NULL,
 ADD COLUMN Estado TINYINT NOT NULL,
 ADD COLUMN Pais CHAR(2) NOT NULL;
+

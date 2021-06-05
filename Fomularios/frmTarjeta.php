@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/styleModal.css">
 	<link rel="stylesheet" type="text/css" href="../iconos/LSiconsStyle.css">
 	<link rel="stylesheet" href="../css/styleTarjeta.css">
-    <title>Devzonee</title>
+    <title>Devzone</title>
 </head>
 <body>
 	<header class="barra-menu header unselectable">
@@ -39,7 +39,7 @@
 	<div class="Tarjeta-Contenedor">
 		<div class="left">
 		<form action="../Fomularios/TarjetaRegistrar.php" method="post">
-				<p>Numero Tarjeta:</p>
+				<p>Número Tarjeta:</p>
 				<div class="number">
 					<input type="text" name="Numero1" maxlength="4" onkeypress='return validaNumericos(event)'> - 
 					<input type="text" name="Numero2" maxlength="4" onkeypress='return validaNumericos(event)'> - 
@@ -48,7 +48,7 @@
 				</div>
 				<p>CCI:</p>
 				<input type="text" name="CCI" id="cci" maxlength="20" onkeypress='return validaNumericos(event)'><br>
-				<p>Banco:</p>
+				<p>Tarjeta:</p>
 				<div class="option">
 				<input type="radio" name="Banco" value="Visa" id="1"><label for="1" class="BankOption"><img src="../imagenes/Visa.png"></label>
 				<input type="radio" name="Banco" value="MasterCard" id="2"><label for="2"class="BankOption"><img src="../imagenes/MasterCard.png"></label>

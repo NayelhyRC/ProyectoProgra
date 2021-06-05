@@ -11,9 +11,10 @@
         {
             $host="localhost";
             $user="root";
-            $pass='';
+            $pass='root';
             // $db="xd";
-            $db = "basedatosprogramacion";
+            // $db = "basedatosprogramacion";
+            $db = "plataforma_cursos";
     
             $conexion=mysqli_connect($host,$user,$pass,$db);
             mysqli_set_charset($conexion, "utf8");

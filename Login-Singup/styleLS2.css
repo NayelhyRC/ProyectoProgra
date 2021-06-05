@@ -56,6 +56,7 @@ a:hover {
 #back:hover{  
   background-color: var(--bg-color-principal);
 }
+
 .contenedor-Login {
   width: 18em;
   height: 25em; 
@@ -98,7 +99,8 @@ a:hover {
   margin-top: 0em;
   height: 17em;
 }
-.datos, .datosL input {
+
+.datos input {
   font-size: 1em;
   outline: none;
   border: 0px;
@@ -106,15 +108,33 @@ a:hover {
   margin-top: 30px;
 }
 
-.datos, .datosL input::placeholder {
+.datosL input {
+  font-size: 1em;
+  outline: none;
+  border: 0px;
+  background-color: rgba(0, 255, 255, 0);
+  margin-top: 30px;
+}
+
+.datos input::placeholder {
   color: #9b9ea7; }
 
-.datos, .datosL hr {
+.datosL input::placeholder {
+    color: #9b9ea7; }
+
+.datos hr {
   position: relative;
   background-color: var(--bg-color-principal);
   margin-top: -15px;
   height: 1px;
   border: 0px; }
+
+  .datosL hr {
+    position: relative;
+    background-color: var(--bg-color-principal);
+    margin-top: -15px;
+    height: 1px;
+    border: 0px; }
 
 /*OPC*/
 .opc {

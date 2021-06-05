@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0; }
 
-label {
+#form-persona label {
   display: inline-block;
   width: 10vw; }
 
@@ -15,10 +15,16 @@ label {
 .container h2 {
   text-align: center; }
 
-#form-persona {
+#form-persona, #form-salir {
   height: auto;
   margin: auto;
   padding: 2rem; }
+
+#form-salir {
+  text-align: center; }
+
+#form-salir input {
+  cursor: pointer; }
 
 #form-persona input:not([type="submit"]), select {
   border: 2px solid #14bf98;
@@ -29,6 +35,7 @@ label {
 #form-persona input[type="submit"] {
   width: 10rem;
   height: 2rem;
+  cursor: pointer;
   font-size: 1.15rem;
   background-color: #14bf98;
   border-radius: 5px;
@@ -48,7 +55,23 @@ label {
   border: none;
   margin: 1rem; }
 
-#div-btn {
+#form-persona input[type="button"]:hover {
+  background-color: #113448;
+  cursor: pointer;
+  color: white; }
+
+#form-salir input {
+  width: 10rem;
+  height: 2rem;
+  font-size: 1.15rem;
+  background-color: #14bf98;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  margin: 1rem; }
+
+.divP-btn {
   margin: auto;
   display: flex;
   justify-content: center; }

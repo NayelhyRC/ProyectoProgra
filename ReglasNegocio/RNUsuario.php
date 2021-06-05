@@ -22,11 +22,13 @@
             $contra = $usuario->getContraseña();
             $correo = $usuario->getCorreo();
     
-            $solicitud = "SELECT U.Id 
+            $solicitud = "SELECT U.Id, U.Usuario 
                     FROM Usuario U
                     WHERE U.Correo = '$correo' AND U.Contraseña = '$contra'";
     
-            $resultado = mysqli_query($Conexion, $solicitud);
+            $this->Conectar();
+            $resultado = $this->EjecutarSqlRead($solicitud);
+
             return $resultado;
         }
 

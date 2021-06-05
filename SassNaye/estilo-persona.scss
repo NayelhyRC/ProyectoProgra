@@ -7,7 +7,7 @@ $bg-color-pantalla-inicio: rgba(17, 52, 72, 0.6);
     margin: 0;
 }
 
-label{
+#form-persona label{
     display: inline-block;
     width: 10vw;
 }
@@ -36,11 +36,18 @@ label{
     text-align: center;
 }
 
-#form-persona{
+#form-persona, #form-salir{
     height: auto;
-    // width: 40vw;
     margin: auto;
     padding: 2rem;
+}
+
+#form-salir{
+    text-align: center;
+}
+
+#form-salir input{
+    cursor: pointer;
 }
 
 #form-persona input:not([type="submit"]), select{
@@ -53,6 +60,7 @@ label{
 #form-persona input[type="submit"]{
     width: 10rem;
     height: 2rem;
+    cursor: pointer;
     font-size: 1.15rem;
     background-color: $bg-color-secundario;
     border-radius: 5px ;
@@ -74,9 +82,31 @@ label{
     margin: 1rem;
 }
 
-#div-btn{
+#form-persona input[type="button"]:hover{
+    background-color: $bg-color-principal;
+    cursor: pointer;
+    color: white;
+}
+
+#form-salir input{
+    width: 10rem;
+    height: 2rem;
+    font-size: 1.15rem;
+    background-color: $bg-color-secundario;
+    border-radius: 5px ;
+    color: white;
+    font-weight: bold;
+    border: none;
+    margin: 1rem;
+}
+
+.divP-btn{
     margin: auto;
     display: flex;
     justify-content: center;
     // text-align: center;
+}
+
+#divS-btn{
+
 }

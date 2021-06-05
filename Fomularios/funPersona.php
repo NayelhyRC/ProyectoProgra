@@ -13,7 +13,7 @@
     
                 $rn = new RNPersona;
                 $rn->Registrar($entidad);
-                header("location: ../frmPersona.php");
+                header("location: frmPersona.php");
             }
         }
     
