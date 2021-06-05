@@ -60,7 +60,7 @@
 				<li class="titulo"><a class="opcionNav" href="#cursos"><i class="ico-books"></i><span> CURSOS</span></a></li>
 				<li class="titulo"><a class="opcionNav" href="#testimonios"><i class="ico-users"></i><span> TESTIMONIOS</span></a></li>
 				<li class="titulo"><a class="opcionNav" href="#contacto"><i class="ico-hangouts"></i><span> CONTACTO</span></a></li>
-				<li class="titulo"><a class="opcionNav" href="Fomularios/frmMisCursos.php"><i class="ico-books"></i><span> MIS CURSOS</span></a></li>
+				<li class="titulo"><a class="opcionNav" href="#"><i class="ico-books"></i><span> MIS CURSOS</span></a></li>
 				<li class="titulo"><a class="opcionNav" href="Fomularios/frmPersona.php"><i class="ico-users"></i><span>PERFIL</span></a></li>
 				<li class="titulo"><a class="opcionNav" href="Fomularios/frmSalir.php"><i  class="icon-key"></i><span> SALIR</span></a></li>
 			</ul>
@@ -122,7 +122,7 @@
 				<iframe src="Slider/prueba.html" style="border-style: none;width: 100%; height: 350px;" scrolling="no"></iframe>
 				<div class="divBoton">
 					<br>
-					<button><a href="cursos.html">Ver más</a></button>
+					<button><a href="Fomularios/frmPruebaCarrito.php">Ver más</a></button>
 				</div>
 				<script src="js/carousel.js"></script>
 		</section>

@@ -12,7 +12,7 @@
             $compra = new Compra();
             $compra->setCurso($cursos[$i]->getId());
             $compra->setMonto($cursos[$i]->getPrecio());
-            $compra->setCodigoOperacion('hola');
+            $compra->setCodigoOperacion('7283');
             $rn->Registrar($compra);
         }
         echo 'Cursos registrados';

@@ -18,7 +18,7 @@
 			<input type="checkbox" id="toggle"/>
 			<label class="menu-icon" for="toggle"></label>
 			<ul id="listaMenu">
-				<li class="titulo"><a class="opcionNav" href="#inicio"><i class="ico-home3"></i><span> INICIO</span></a></li>
+				<li class="titulo"><a class="opcionNav" href="../index2.php"><i class="ico-home3"></i><span> INICIO</span></a></li>
 				<li class="titulo"><a class="opcionNav" href="#nosotros"><i class="ico-user-tie"></i><span> NOSOTROS</span></a></li>
 				<li class="titulo"><a class="opcionNav" href="#cursos"><i class="ico-books"></i><span> CURSOS</span></a></li>
 				<li class="titulo"><a class="opcionNav" href="#testimonios"><i class="ico-users"></i><span> TESTIMONIOS</span></a></li>
