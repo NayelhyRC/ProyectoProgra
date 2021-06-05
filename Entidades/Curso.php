@@ -1,6 +1,7 @@
 <?php 
     class Curso
     {
+        private $Id;
         private $Nombre;
         private $Descripcion;
         private $Precio;
@@ -77,6 +78,16 @@
         public function setCategoria($Categoria)
         {
             $this->Categoria = $Categoria;
+        }
+
+        public function getId()
+        {
+            return $this->Id;
+        }
+
+        public function setId($Id)
+        {
+            $this->Id = $Id;
         }
     }
 ?>

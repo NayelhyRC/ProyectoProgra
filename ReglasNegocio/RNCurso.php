@@ -17,10 +17,27 @@
             
             $sql = "INSERT INTO curso (Nombre,Descripcion,Precio,Idioma,IdCategoria,Estado) 
                     VALUES ('$nombre','$descripcion','$precio','$idioma','$categoria','$estado');";
-            echo $sql;
             $this->Conectar();
             $this->EjecutarSqlEdit($sql);
             $this->Cerrar();
+        }
+
+        public function Listar()
+        {
+            $sql = "SELECT * FROM curso";
+            $this->Conectar();
+            $resultado = $this->EjecutarSqlRead($sql);	
+            $cursos = array();
+            while($fila=mysqli_fetch_array($resultado)){
+                $entidad = new Curso();
+                $entidad->setId($fila['Id']);
+                $entidad->setNombre($fila['Nombre']);
+                $entidad->setDescripcion($fila['Descripcion']);
+                $entidad->setPrecio($fila['Precio']);
+                $cursos[] = $entidad;
+            }
+            $this->Cerrar();
+            return $cursos;
         }
     }
 ?>

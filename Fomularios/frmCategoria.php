@@ -5,33 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../iconos/style.css">
     <title>Registrar categoría</title>
 </head>
 <body>
-    <div class="container">
-        <fieldset class="group">
-            <legend>Registrar categoría</legend>
+    <?php include_once '../PaginaBase/nav.php';?>
+    <section class="container">
+        <div class="group">
+            <center><h3>Registrar categoría</h3></center>
             <form action="funCategoria.php" method="post" class="frmCategoria">
             Descripción: 
             <input type="text" name="descripcion" required>
-            <div>Estado: <input type="checkbox" name="estado"></div>
+            <div>Estado: <input type="checkbox" name="estado" checked></div>
 
-            <input type="submit" value="Registrar">
+            <input type="submit" value="Registrar" class="btn-link">
         </form>
-        </fieldset>
-        <?php VerificarRegistro();?>
-    </div>
+        </div>
+    </section>
+    <?php include_once '../PaginaBase/footer.php';?>
 </body>
 </html>
 
 <?php 
-    function VerificarRegistro()
-    {
-        if (isset($_GET['register'])) {
-            if ($_GET['register'] == 'yes') {
-                echo '<h3>Categoria registrada</h3>';
-                header("refresh:4;url=frmCategoria.php");
-            }
-        }
-    }
 ?>

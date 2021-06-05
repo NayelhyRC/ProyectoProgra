@@ -536,6 +536,7 @@ footer .contenedor .informacion-item.contacto {
   margin: auto;
   padding: 2em;
   max-width: 340px;
+  min-height: 600px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -557,5 +558,11 @@ footer .contenedor .informacion-item.contacto {
   border-radius: 5px;
   line-height: 1.5em;
   margin: 0.5em 0;
+}
+
+.curso-item {
+  border: 2px solid #14bf98;
+  margin: 10px 0;
+  padding: 10px;
 }
 /*# sourceMappingURL=style.css.map */

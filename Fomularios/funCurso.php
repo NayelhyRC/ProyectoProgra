@@ -20,7 +20,7 @@
 
             $rn = new RNCurso;
             $rn->Registrar($entidad);
-            header("refresh:10;url=frmCurso.php");
+            header("refresh:1;url=frmCurso.php");
         }
     }
 ?>

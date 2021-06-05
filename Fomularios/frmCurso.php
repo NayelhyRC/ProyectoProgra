@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../iconos/style.css">
     <title>Registrar Curso</title>
-    <?php include_once '../Entidades/Categoria.php';
-    include_once '../ReglasNegocio/RNCurso.php';
-    include_once '../ReglasNegocio/RNCategoria.php';?>
 </head>
+<?php 
+    include_once '../Entidades/Categoria.php';
+    include_once '../ReglasNegocio/RNCurso.php';
+    include_once '../ReglasNegocio/RNCategoria.php';
+?>
 <body>
     <?php include_once '../PaginaBase/nav.php';?>
     <section class="container">
@@ -41,7 +43,7 @@
 </body>
 </html>
 
-<?php 
+<?php
     function ListarCatergorias()
     {
         $rn = new RNCategoria;
