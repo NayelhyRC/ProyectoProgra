@@ -22,8 +22,9 @@
             $contra = $usuario->getContraseña();
             $correo = $usuario->getCorreo();
     
-            $solicitud = "SELECT U.Id, U.Usuario 
+            $solicitud = "SELECT U.Id, U.Usuario, P.Id 
                     FROM Usuario U
+                    JOIN Persona P ON U.IdPersona = P.Id
                     WHERE U.Correo = '$correo' AND U.Contraseña = '$contra'";
     
             $this->Conectar();

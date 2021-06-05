@@ -15,6 +15,7 @@
             session_start();
             $_SESSION['Id'] = $fila[0];
             $_SESSION['Usuario'] = $fila[1];
+            $_SESSION['IdPer'] = $fila[2];
             header("location: ../index2.php");
         }else{
             header("location:../Login-Singup/Login.php");
