@@ -6,6 +6,7 @@
         private $Precio;
         private $Idioma;
         private $Duracion;
+        private $Categoria;
         private $Estado;
 
         public function getNombre()
@@ -66,6 +67,16 @@
         public function setEstado($Estado)
         {
             $this->Estado = $Estado;
+        }
+
+        public function getCategoria()
+        {
+            return $this->Categoria;
+        }
+
+        public function setCategoria($Categoria)
+        {
+            $this->Categoria = $Categoria;
         }
     }
 ?>

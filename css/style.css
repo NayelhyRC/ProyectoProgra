@@ -193,7 +193,8 @@
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 0.8em;
+  font-size: 1em;
+  border: none;
   background-color: #14bf98;
   border-radius: 5px;
   margin: 0.3em auto;
@@ -211,7 +212,8 @@
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 0.8em;
+  font-size: 1em;
+  border: none;
   background-color: #113448;
 }
 
@@ -231,7 +233,8 @@
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 0.8em;
+  font-size: 1em;
+  border: none;
   border: 1px solid #fff;
   margin: auto;
   font-size: 1.2em;
@@ -249,7 +252,8 @@
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 0.8em;
+  font-size: 1em;
+  border: none;
   color: #fff;
   border-right: #fff 1px solid;
   border-bottom: #fff 1px solid;
@@ -274,7 +278,8 @@
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 0.8em;
+  font-size: 1em;
+  border: none;
   padding: 0.5em 1em;
   color: #fff;
   border: #fff 1px solid;
@@ -529,8 +534,10 @@ footer .contenedor .informacion-item.contacto {
 
 .group {
   margin: auto;
-  padding: 10px;
-  width: 340px;
+  padding: 2em;
+  max-width: 340px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .frmCategoria {
@@ -543,5 +550,12 @@ footer .contenedor .informacion-item.contacto {
           flex-direction: column;
   margin: auto;
   max-width: 320px;
+}
+
+.frmCategoria input:not([type=submit]), .frmCategoria select {
+  border: 2px solid #14bf98;
+  border-radius: 5px;
+  line-height: 1.5em;
+  margin: 0.5em 0;
 }
 /*# sourceMappingURL=style.css.map */
