@@ -3,11 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css?v=<?php echo time(); ?>">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<link rel="stylesheet" type="text/css" href="iconos/style.css">
 	<!-- <link rel="stylesheet" type="text/css" href="css/styleModal.css"> -->
-	<link rel="stylesheet" type="text/css" href="css/styleLS.css">
+	<link rel="stylesheet" type="text/css" href="css/styleLS.css?v=<?php echo time(); ?>">
 	<link rel="stylesheet" type="text/css" href="iconos/LSiconsStyle.css">
 
 	<title>DevZone</title>
@@ -124,7 +124,7 @@
 				<p>
 					¿Ya tienes una cuenta?
 					<a href="nosotros.html">
-						<center>Inicia Sesión</center>
+						Inicia Sesión
 					</a>
 				</p>
 			</form>

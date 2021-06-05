@@ -2,8 +2,8 @@
 
 .contenedor-Singup {
     @include ContainerGeneric;
-    width: 800px;
-    height: 440px;
+    width: 300px;
+    height: 410px;
 }
 body.showSingupForm .Modal-Singup {
     display: block;
@@ -26,4 +26,16 @@ body.showSingupForm .contenedor-Singup {
   }
   .contenedor-Singup a:hover {
     color: var(--bg-color-secundario);
+  }
+
+  .registrar{
+    text-align: center;
+  }
+
+  .registrar p{
+    margin: auto;
+  }
+
+  .registrar a{
+    display: block;
   }
