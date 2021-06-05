@@ -32,7 +32,8 @@ CREATE TABLE Tarjeta(
     Banco VARCHAR(40) NOT NULL,
     ID_Persona SMALLINT NOT NULL,
     CONSTRAINT Tarjeta_Id PRIMARY KEY (Id),
-    CONSTRAINT Tarjeta_ID_Persona FOREIGN KEY (ID_Persona) REFERENCES Persona(Id)
+    CONSTRAINT Tarjeta_ID_Persona FOREIGN KEY (ID_Persona) REFERENCES Persona(Id),
+    CONSTRAINT Tarjeta_NumeroTarjeta UNIQUE (NumeroTarjeta)
 );/*
 CREATE TABLE Compra(
 	Id INT AUTO_INCREMENT NOT NULL,

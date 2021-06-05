@@ -38,7 +38,7 @@
 <section>
 	<div class="Tarjeta-Contenedor">
 		<div class="left">
-		<form action=" method="post">
+		<form action="../Fomularios/frmTarjeta.php" method="post">
 				<p>Numero Tarjeta:</p>
 				<div class="number">
 					<input type="text" name="Numero1" maxlength="4" onkeypress='return validaNumericos(event)'> - 
@@ -65,7 +65,28 @@
 		</div>
 	</div>
 </section>    
+<?php
+	include "../Entidades/Tarjeta.php";
+	include "../ReglasNegocio/RNTarjeta.php";
 
+        function Registrar()
+        {
+            if (!isset($_POST['Registrer'])) {
+				$id =2 ;
+				$numer=$_POST['Numero1'].$_POST['Numero2'].$_POST['Numero3'].$_POST['Numero4'];
+                $trj = new Tarjeta;
+				$trj->setNumeroTarjeta($numer);
+				$trj->setCCI($_POST['CCI']);
+				$trj->setBanco($_POST['Banco']);
+				$trj->setIdPersona($id);
+                $rn = new RNTarjeta;
+                $rn->Registrar($trj);
+                header("location: ../frmPersona.php");
+            }
+        }
+		
+	Registrar();
+?>
 
 <footer class="footer">
 		<div id="contacto" class="contacto">

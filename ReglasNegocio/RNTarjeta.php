@@ -1,5 +1,5 @@
 <?php 
-    include '.../Entidades/Tarjeta.php';
+    include '../Entidades/Tarjeta.php';
     include '../AccesoDatos/Conexion.php';
 
     class RNTarjeta extends Conexion{

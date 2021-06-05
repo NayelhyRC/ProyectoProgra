@@ -5,14 +5,13 @@
         private $CCI;
         private $Banco;
         private $Id_Persona;
-
-        public function __construct($NumTar,$nCCI,$bank,$IDP)
+        /*public function __construct($NumTar,$nCCI,$bank,$IDP)
         {
             $this->NumeroTarjeta = $NumTar;
             $this->CCI = $nCCI;
             $this->Banco = $bank;
             $this->Id_Persona = $IDP;
-        }
+        }*/
         public function getNumeroTarjeta(){
             return $this->NumeroTarjeta;
         }
